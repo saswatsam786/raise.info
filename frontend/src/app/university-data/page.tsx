@@ -5,6 +5,7 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import SalaryDetailsPanel from "@/components/SalaryDetailsPanel";
 import AddSalaryModal from "@/components/AddSalaryModal";
+import { supabase } from "@/lib/supabase/config";
 
 interface UniversityData {
   university: string;
@@ -230,14 +231,92 @@ export default function UniversityDataPage() {
     },
   ];
 
+  // University rows loaded from Supabase (user submissions)
+  const [supabaseUniversityData, setSupabaseUniversityData] = useState<
+    UniversityData[]
+  >([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const fetchUniversityData = async () => {
+    try {
+      const { data, error } = await supabase
+        .from("salaries")
+        .select(
+          "company_name, designation, location, total_compensation, data_points_count, avg_salary, job_type, additional_data"
+        );
+
+      if (error) throw error;
+
+      const transformed: UniversityData[] = (data || [])
+        .map(
+          (item: {
+            company_name: string;
+            designation: string;
+            location: string;
+            total_compensation: number | null;
+            data_points_count: number | null;
+            avg_salary: number | null;
+            job_type?: string | null;
+            additional_data?: {
+              university?: string | null;
+              year?: string | null;
+              employment_type?: "Full-time" | "Internship" | null;
+            } | null;
+          }) => {
+            const universityName = item.additional_data?.university;
+            if (!universityName) return null;
+
+            const avg =
+              item.avg_salary ?? item.total_compensation ?? 0;
+            const employmentType =
+              item.additional_data?.employment_type ||
+              (item.job_type === "internship" ? "Internship" : "Full-time");
+
+            const year =
+              item.additional_data?.year ??
+              new Date().getFullYear().toString();
+
+            return {
+              university: universityName,
+              company: item.company_name,
+              role: item.designation,
+              employment_type: employmentType,
+              salary_min: avg,
+              salary_max: avg,
+              salary_avg: avg,
+              reports: item.data_points_count ?? 1,
+              year: Number(year),
+              location: item.location,
+            };
+          }
+        )
+        .filter((x): x is UniversityData => x !== null);
+
+      setSupabaseUniversityData(transformed);
+    } catch (error) {
+      console.error("Error fetching university data:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchUniversityData();
+  }, []);
+
+  const allUniversityData = useMemo(
+    () => [...supabaseUniversityData, ...universityData],
+    [supabaseUniversityData]
+  );
+
   // Calculate salary range from data
   const salaryRange = useMemo(() => {
-    const allSalaries = universityData.map((item) => item.salary_avg);
+    const allSalaries = allUniversityData.map((item) => item.salary_avg);
     return {
       min: Math.floor(Math.min(...allSalaries)),
       max: Math.ceil(Math.max(...allSalaries)),
     };
-  }, []);
+  }, [allUniversityData]);
 
   const [filters, setFilters] = useState<Filters>({
     university: "",
@@ -353,7 +432,7 @@ export default function UniversityDataPage() {
   };
 
   const filteredAndSortedData = useMemo(() => {
-    let filtered = universityData.filter((item) => {
+    let filtered = allUniversityData.filter((item) => {
       return (
         (filters.university === "" ||
           item.university.toLowerCase().includes(filters.university.toLowerCase())) &&
@@ -388,7 +467,7 @@ export default function UniversityDataPage() {
     });
 
     return filtered;
-  }, [filters, sortField, sortDirection]);
+  }, [allUniversityData, filters, sortField, sortDirection]);
 
   // Set first row as selected by default when component mounts
   useEffect(() => {
@@ -404,29 +483,27 @@ export default function UniversityDataPage() {
   const endIndex = startIndex + itemsPerPage;
   const currentData = filteredAndSortedData.slice(startIndex, endIndex);
 
-  const uniqueUniversities = useMemo(
-    () => [...new Set(universityData.map((item) => item.university))].sort(),
-    []
-  );
-
   const uniqueCompanies = useMemo(
-    () => [...new Set(universityData.map((item) => item.company))].sort(),
-    []
+    () => [...new Set(allUniversityData.map((item) => item.company))].sort(),
+    [allUniversityData]
   );
 
   const uniqueRoles = useMemo(
-    () => [...new Set(universityData.map((item) => item.role))].sort(),
-    []
+    () => [...new Set(allUniversityData.map((item) => item.role))].sort(),
+    [allUniversityData]
   );
 
   const uniqueLocations = useMemo(
-    () => [...new Set(universityData.map((item) => item.location))].sort(),
-    []
+    () => [...new Set(allUniversityData.map((item) => item.location))].sort(),
+    [allUniversityData]
   );
 
   const uniqueYears = useMemo(
-    () => [...new Set(universityData.map((item) => item.year))].sort((a, b) => b - a),
-    []
+    () =>
+      [...new Set(allUniversityData.map((item) => item.year))].sort(
+        (a, b) => b - a
+      ),
+    [allUniversityData]
   );
 
   const formatCurrency = (amount: number) => {
@@ -532,23 +609,18 @@ export default function UniversityDataPage() {
 
           {/* Filter Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-            {/* University */}
+            {/* University (text input) */}
             <div>
               <label className="block text-xs font-semibold text-gray-600 mb-0.5 uppercase tracking-wide">
                 University
               </label>
-              <select
+              <input
+                type="text"
+                placeholder="Search university..."
                 value={filters.university}
                 onChange={(e) => handleFilterChange("university", e.target.value)}
-                className="w-full px-2.5 py-1.5 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-slate-400 focus:border-transparent text-gray-900 bg-white transition-colors"
-              >
-                <option value="">All Universities</option>
-                {uniqueUniversities.map((university) => (
-                  <option key={university} value={university}>
-                    {university}
-                  </option>
-                ))}
-              </select>
+                className="w-full px-2.5 py-1.5 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-slate-400 focus:border-transparent text-gray-900 placeholder-gray-500 bg-white transition-colors"
+              />
             </div>
 
             {/* Company with Autocomplete */}
@@ -701,8 +773,15 @@ export default function UniversityDataPage() {
         {/* Table and Side Panel Container */}
         <div className={`flex gap-4 transition-all duration-500 ease-in-out min-h-[600px] ${isSidePanelOpen ? '' : ''}`}>
           {/* Table Section - 70% when panel is open, 100% when closed */}
-          <div className={`transition-all duration-500 ease-in-out flex flex-col ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
-            {filteredAndSortedData.length === 0 ? (
+          <div className={`transition-all duration-500 ease-in-out ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
+            {isLoading ? (
+              <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-600 mx-auto"></div>
+                <p className="text-gray-600 text-lg font-semibold mt-4">
+                  Loading university data...
+                </p>
+              </div>
+            ) : filteredAndSortedData.length === 0 ? (
               <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
                 <svg
                   className="mx-auto h-16 w-16 text-neutral-400"
@@ -723,9 +802,9 @@ export default function UniversityDataPage() {
                 </p>
               </div>
             ) : (
-                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200 flex-1 flex flex-col">
-                  <div className="overflow-x-auto flex-1 flex flex-col">
-                    <table className="min-w-full divide-y divide-gray-200 flex-1">
+                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gradient-to-r from-slate-50 to-slate-100 sticky top-0">
                       <tr>
                         <th
@@ -919,6 +998,7 @@ export default function UniversityDataPage() {
         isOpen={isAddSalaryModalOpen}
         onClose={() => setIsAddSalaryModalOpen(false)}
         type="university"
+        onSuccess={fetchUniversityData}
       />
     </div>
   );

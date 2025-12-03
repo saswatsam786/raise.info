@@ -17,6 +17,10 @@ export async function POST(request: Request) {
       totalCompensation: body.totalCompensation ?? "",
       type: (body.type as CreateSalaryInput["type"]) ?? "fulltime",
       employmentType: body.employmentType,
+      duration: body.duration,
+      stipend: body.stipend,
+      university: body.university,
+      year: body.year,
     });
 
     return NextResponse.json({ salary: result }, { status: 201 });

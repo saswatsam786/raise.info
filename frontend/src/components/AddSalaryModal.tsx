@@ -62,6 +62,10 @@ export default function AddSalaryModal({
         },
         body: JSON.stringify({
           ...formData,
+          totalCompensation:
+            type === "internship"
+              ? formData.stipend
+              : formData.totalCompensation,
           type,
         }),
       });

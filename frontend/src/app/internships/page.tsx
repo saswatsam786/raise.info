@@ -5,6 +5,7 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import SalaryDetailsPanel from "@/components/SalaryDetailsPanel";
 import AddSalaryModal from "@/components/AddSalaryModal";
+import { supabase } from "@/lib/supabase/config";
 
 interface InternshipData {
   company_name: string;
@@ -24,8 +25,6 @@ interface Filters {
   role: string;
   location: string;
   duration: string;
-  university: string;
-  year: string;
   stipendMin: number;
   stipendMax: number;
 }
@@ -974,22 +973,87 @@ export default function InternshipsPage() {
     },
   ];
 
+  // Internships loaded from Supabase (user submissions)
+  const [supabaseInternships, setSupabaseInternships] = useState<
+    InternshipData[]
+  >([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchInternships = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("salaries")
+          .select(
+            "company_name, designation, location, total_compensation, data_points_count, avg_salary, job_type, additional_data"
+          )
+          .eq("job_type", "internship")
+          .order("total_compensation", { ascending: false });
+
+        if (error) throw error;
+
+        const transformed: InternshipData[] = (data || []).map(
+          (item: {
+            company_name: string;
+            designation: string;
+            location: string;
+            total_compensation: number | null;
+            data_points_count: number | null;
+            avg_salary: number | null;
+            job_type?: string;
+            additional_data?: { duration?: string | null };
+          }) => {
+            const stipend =
+              item.total_compensation ?? item.avg_salary ?? 0;
+
+            return {
+              company_name: item.company_name,
+              role: item.designation,
+              location: item.location,
+              duration: item.additional_data?.duration ?? "",
+              stipend_min: stipend,
+              stipend_max: stipend,
+              stipend_avg: stipend,
+              reports: item.data_points_count ?? 1,
+              university: "N/A",
+              year: new Date().getFullYear(),
+            };
+          }
+        );
+
+        setSupabaseInternships(transformed);
+      } catch (error) {
+        console.error("Error fetching internships:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchInternships();
+  }, []);
+
+  const allInternships = useMemo(
+    () => [...supabaseInternships, ...internshipData],
+    [supabaseInternships]
+  );
+
   // Calculate stipend range from data
   const stipendRange = useMemo(() => {
-    const allStipends = internshipData.map((item) => item.stipend_avg);
+    if (allInternships.length === 0) {
+      return { min: 0, max: 10000 };
+    }
+    const allStipends = allInternships.map((item) => item.stipend_avg);
     return {
       min: Math.floor(Math.min(...allStipends)),
       max: Math.ceil(Math.max(...allStipends)),
     };
-  }, []);
+  }, [allInternships]);
 
   const [filters, setFilters] = useState<Filters>({
     companyName: "",
     role: "",
     location: "",
     duration: "",
-    university: "",
-    year: "",
     stipendMin: 0,
     stipendMax: 10000,
   });
@@ -1066,8 +1130,6 @@ export default function InternshipsPage() {
       role: "",
       location: "",
       duration: "",
-      university: "",
-      year: "",
       stipendMin: stipendRange.min,
       stipendMax: stipendRange.max,
     });
@@ -1097,7 +1159,7 @@ export default function InternshipsPage() {
   };
 
   const filteredAndSortedData = useMemo(() => {
-    let filtered = internshipData.filter((item) => {
+    let filtered = allInternships.filter((item) => {
       return (
         (filters.companyName === "" ||
           item.company_name
@@ -1108,9 +1170,6 @@ export default function InternshipsPage() {
         (filters.location === "" ||
           item.location.toLowerCase().includes(filters.location.toLowerCase())) &&
         (filters.duration === "" || item.duration === filters.duration) &&
-        (filters.university === "" ||
-          item.university.toLowerCase().includes(filters.university.toLowerCase())) &&
-        (filters.year === "" || item.year.toString() === filters.year) &&
         (item.stipend_avg >= filters.stipendMin && item.stipend_avg <= filters.stipendMax)
       );
     });
@@ -1134,7 +1193,7 @@ export default function InternshipsPage() {
     });
 
     return filtered;
-  }, [filters, sortField, sortDirection]);
+  }, [allInternships, filters, sortField, sortDirection]);
 
   // Set first row as selected by default when component mounts
   useEffect(() => {
@@ -1151,33 +1210,23 @@ export default function InternshipsPage() {
   const currentData = filteredAndSortedData.slice(startIndex, endIndex);
 
   const uniqueCompanies = useMemo(
-    () => [...new Set(internshipData.map((item) => item.company_name))].sort(),
-    []
+    () => [...new Set(allInternships.map((item) => item.company_name))].sort(),
+    [allInternships]
   );
 
   const uniqueRoles = useMemo(
-    () => [...new Set(internshipData.map((item) => item.role))].sort(),
-    []
+    () => [...new Set(allInternships.map((item) => item.role))].sort(),
+    [allInternships]
   );
 
   const uniqueLocations = useMemo(
-    () => [...new Set(internshipData.map((item) => item.location))].sort(),
-    []
+    () => [...new Set(allInternships.map((item) => item.location))].sort(),
+    [allInternships]
   );
 
   const uniqueDurations = useMemo(
-    () => [...new Set(internshipData.map((item) => item.duration))].sort(),
-    []
-  );
-
-  const uniqueUniversities = useMemo(
-    () => [...new Set(internshipData.map((item) => item.university))].sort(),
-    []
-  );
-
-  const uniqueYears = useMemo(
-    () => [...new Set(internshipData.map((item) => item.year))].sort((a, b) => b - a),
-    []
+    () => [...new Set(allInternships.map((item) => item.duration))].sort(),
+    [allInternships]
   );
 
   const formatCurrency = (amount: number) => {
@@ -1365,43 +1414,6 @@ export default function InternshipsPage() {
               </select>
             </div>
 
-            {/* University */}
-            <div>
-              <label className="block text-xs font-semibold text-gray-600 mb-0.5 uppercase tracking-wide">
-                University
-              </label>
-              <select
-                value={filters.university}
-                onChange={(e) => handleFilterChange("university", e.target.value)}
-                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:border-transparent text-gray-900 bg-white transition-colors"
-              >
-                <option value="">All Universities</option>
-                {uniqueUniversities.map((university) => (
-                  <option key={university} value={university}>
-                    {university}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Year */}
-            <div>
-              <label className="block text-xs font-semibold text-gray-600 mb-0.5 uppercase tracking-wide">
-                Year
-              </label>
-              <select
-                value={filters.year}
-                onChange={(e) => handleFilterChange("year", e.target.value)}
-                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:border-transparent text-gray-900 bg-white transition-colors"
-              >
-                <option value="">All Years</option>
-                {uniqueYears.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-            </div>
           </div>
 
           {/* Stipend Range Slider */}
@@ -1449,8 +1461,15 @@ export default function InternshipsPage() {
         {/* Table and Side Panel Container */}
         <div className={`flex gap-4 transition-all duration-500 ease-in-out min-h-[600px] ${isSidePanelOpen ? '' : ''}`}>
           {/* Table Section - 70% when panel is open, 100% when closed */}
-          <div className={`transition-all duration-500 ease-in-out flex flex-col ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
-            {filteredAndSortedData.length === 0 ? (
+          <div className={`transition-all duration-500 ease-in-out ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
+            {isLoading ? (
+              <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-600 mx-auto"></div>
+                <p className="text-gray-600 text-lg font-semibold mt-4">
+                  Loading internship data...
+                </p>
+              </div>
+            ) : filteredAndSortedData.length === 0 ? (
               <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
                 <svg
                   className="mx-auto h-16 w-16 text-neutral-400"
@@ -1465,15 +1484,17 @@ export default function InternshipsPage() {
                     d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <div className="text-neutral-600 text-xl font-semibold mt-6">No results found</div>
+                <div className="text-neutral-600 text-xl font-semibold mt-6">
+                  No results found
+                </div>
                 <p className="text-neutral-500 mt-2">
                   Try adjusting your filters to see more results
                 </p>
               </div>
             ) : (
-                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200 flex-1 flex flex-col">
-                  <div className="overflow-x-auto flex-1 flex flex-col">
-                    <table className="min-w-full divide-y divide-gray-200 flex-1">
+                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gradient-to-r from-slate-50 to-slate-100 sticky top-0">
                       <tr>
                         <th
@@ -1522,15 +1543,6 @@ export default function InternshipsPage() {
                           </div>
                         </th>
                         <th
-                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-40"
-                          onClick={() => handleSort("university")}
-                        >
-                          <div className="flex items-center justify-between w-full">
-                            <span className="flex-1">University</span>
-                            <SortIcon field="university" />
-                          </div>
-                        </th>
-                        <th
                             className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-24"
                           onClick={() => handleSort("reports")}
                         >
@@ -1573,11 +1585,6 @@ export default function InternshipsPage() {
                           <td className="px-3 py-2 whitespace-nowrap">
                             <div className="text-sm font-bold text-slate-600">
                               {formatCurrency(item.stipend_avg)}
-                            </div>
-                          </td>
-                          <td className="px-3 py-2 whitespace-nowrap">
-                            <div className="text-sm text-gray-700">
-                              {item.university}
                             </div>
                           </td>
                           <td className="px-3 py-2 whitespace-nowrap">
