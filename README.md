@@ -72,10 +72,19 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-### 3. Backend tooling (optional)
+### 3. Backend setup (Node tooling, optional)
 
-Backend TypeScript (services, repository, server Supabase client) uses the root `tsconfig.json`.  
-Scraping and SQL scripts live under `backend/scrapper` and `backend/backend/database`.
+Install backend Node dependencies:
+
+```bash
+cd backend
+npm install
+```
+
+Notes:
+
+- Backend TypeScript (services, repository, server Supabase client) uses the root `tsconfig.json`.
+- Scraping and SQL scripts live under `backend/scrapper` and `backend/backend/database`.
 
 ## 👥 Team
 
