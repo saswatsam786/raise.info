@@ -21,7 +21,7 @@ export default function AddSalaryModal({
   onSuccess,
 }: AddSalaryModalProps) {
   const { user, openAuthModal } = useAuth();
-  const [formData, setFormData] = useState({
+  const initialFormState = {
     company: "",
     role: "",
     location: "",
@@ -35,7 +35,9 @@ export default function AddSalaryModal({
     university: "",
     year: "",
     employmentType: "Full-time",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormState);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -74,6 +76,8 @@ export default function AddSalaryModal({
       }
 
       alert("Thank you for your submission!");
+      // Reset the form so the modal is cleared for the next submission
+      setFormData(initialFormState);
       onClose();
       onSuccess?.();
     } catch (error) {
