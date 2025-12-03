@@ -2,11 +2,10 @@
 
 import React, { useState } from "react";
 import { formatDistanceToNow } from "date-fns";
-import { MessageSquare, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import VoteButtons from "./VoteButtons";
-import CommentInput from "./CommentInput";
 import AttachmentDisplay from "./AttachmentDisplay";
-import { CommentWithReplies, Attachment } from "@/types/comments";
+import { CommentWithReplies } from "@/types/comments";
 import { useAuth } from "@/contexts/AuthContext";
 
 interface CommentItemProps {
@@ -21,17 +20,26 @@ export default function CommentItem({
   onDelete,
 }: CommentItemProps) {
   const { user } = useAuth();
-  const [showReplyInput, setShowReplyInput] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const isOwner = user?.id === comment.user_id && !comment.is_anonymous;
+  // Check if current user owns this comment
+  // Only show delete button if user is logged in AND comment has a user_id AND they match
+  const isOwner = Boolean(
+    user?.id && 
+    comment.user_id && 
+    String(user.id) === String(comment.user_id)
+  );
   const userVote = user ? comment.voted_by?.[user.id] || null : null;
 
   const timeAgo = comment.created_at
     ? formatDistanceToNow(new Date(comment.created_at), { addSuffix: true })
     : "just now";
 
-  const handleReply = async (content: string, attachments?: Attachment[]) => {};
+  const handleDelete = () => {
+    if (onDelete && isOwner) {
+      onDelete(comment.id);
+    }
+  };
 
   return (
     <div className="bg-white rounded-lg p-3 border border-slate-200">
@@ -79,7 +87,7 @@ export default function CommentItem({
       </div>
 
       {/* Comment Actions */}
-      <div className="flex items-center gap-3 mt-2">
+      <div className="flex items-center justify-between gap-3 mt-2">
         <VoteButtons
           upvotes={comment.upvotes}
           downvotes={comment.downvotes}
@@ -88,19 +96,17 @@ export default function CommentItem({
           isDisabled={!user}
         />
 
-
+        {/* Delete Button - Only show if user owns the comment */}
         {isOwner && onDelete && (
           <button
-            onClick={() => onDelete(comment.id)}
-            className="ml-auto p-1.5 rounded hover:bg-red-50 transition-colors"
-            title="Delete comment"
+            onClick={handleDelete}
+            className="p-1.5 rounded hover:bg-slate-100 transition-colors"
+            title="Delete your comment"
           >
-            <Trash2 className="w-4 h-4 text-red-500 hover:text-red-600" />
+            <Trash2 className="w-4 h-4 text-slate-600 hover:text-slate-700" />
           </button>
         )}
       </div>
-
-      {/* Reply feature removed */}
     </div>
   );
 }

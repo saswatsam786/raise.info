@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Modal from "./ui/Modal";
 import { Building2, MapPin, Briefcase, GraduationCap, Calendar, DollarSign, Shield, Heart, TrendingUp, ArrowRight } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import type { SalaryPayload } from "@/payloads/salaries";
 
 type ModalType = "fulltime" | "internship" | "university";
 
@@ -21,7 +22,7 @@ export default function AddSalaryModal({
   onSuccess,
 }: AddSalaryModalProps) {
   const { user, openAuthModal } = useAuth();
-  const initialFormState = {
+  const initialFormState: Omit<SalaryPayload, "type"> = {
     company: "",
     role: "",
     location: "",

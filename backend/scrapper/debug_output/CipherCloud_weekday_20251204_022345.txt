@@ -1,0 +1,836 @@
+================================================================================
+Company: CipherCloud
+Source: weekday
+Timestamp: 20251204_022345
+================================================================================
+
+RAW SALARY VALUES (ORIGINAL FORMAT):
+--------------------------------------------------------------------------------
+
+Raw Value #1:
+  Role: backend
+  Salary (raw): 7.2 (type: float)
+  Years of Experience: 15
+  Location: N/A
+
+Raw Value #2:
+  Role: backend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #3:
+  Role: frontend
+  Salary (raw): 7.2 (type: float)
+  Years of Experience: 15
+  Location: N/A
+
+Raw Value #4:
+  Role: frontend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #5:
+  Role: fullstack
+  Salary (raw): 7.2 (type: float)
+  Years of Experience: 15
+  Location: N/A
+
+Raw Value #6:
+  Role: fullstack
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #7:
+  Role: tech lead
+  Salary (raw): 7.2 (type: float)
+  Years of Experience: 15
+  Location: N/A
+
+Raw Value #8:
+  Role: tech lead
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #9:
+  Role: dev-ops
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #10:
+  Role: data science
+  Salary (raw): 7.2 (type: float)
+  Years of Experience: 15
+  Location: N/A
+
+Raw Value #11:
+  Role: nlp
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #12:
+  Role: Web3
+  Salary (raw): 27 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+FULL RAW JSON DATA:
+--------------------------------------------------------------------------------
+{
+  "raw_data": {
+    "companyId": "ciphercloud",
+    "averageSalaries": [
+      {
+        "yearsOfExperience": 1,
+        "averageSalary": 15
+      },
+      {
+        "yearsOfExperience": 5,
+        "averageSalary": 96.95
+      },
+      {
+        "yearsOfExperience": 10,
+        "averageSalary": 60
+      }
+    ],
+    "maxSalary": 27,
+    "minSalary": 7.2,
+    "roles": [
+      {
+        "role": "backend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 126
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 7.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer QA",
+            "yearsOfExperience": 15,
+            "salary": 7.2
+          },
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "frontend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 126
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 7.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer QA",
+            "yearsOfExperience": 15,
+            "salary": 7.2
+          },
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "fullstack",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 126
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 7.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer QA",
+            "yearsOfExperience": 15,
+            "salary": 7.2
+          },
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "tech lead",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 126
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 7.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer QA",
+            "yearsOfExperience": 15,
+            "salary": 7.2
+          },
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "dev-ops",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 27,
+        "individualSalaries": [
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "data science",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 7.2,
+        "minSalary": 7.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer QA",
+            "yearsOfExperience": 15,
+            "salary": 7.2
+          }
+        ]
+      },
+      {
+        "role": "nlp",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 27,
+        "individualSalaries": [
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "Web3",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 27,
+        "minSalary": 27,
+        "individualSalaries": [
+          {
+            "role": "Lead Technical Support Engineer",
+            "yearsOfExperience": 17,
+            "salary": 27
+          }
+        ]
+      }
+    ]
+  },
+  "roles": [
+    {
+      "role": "backend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 126
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 7.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer QA",
+          "yearsOfExperience": 15,
+          "salary": 7.2
+        },
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "frontend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 126
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 7.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer QA",
+          "yearsOfExperience": 15,
+          "salary": 7.2
+        },
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "fullstack",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 126
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 7.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer QA",
+          "yearsOfExperience": 15,
+          "salary": 7.2
+        },
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "tech lead",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 126
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 7.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer QA",
+          "yearsOfExperience": 15,
+          "salary": 7.2
+        },
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "dev-ops",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 27,
+      "individualSalaries": [
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "data science",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 7.2,
+      "minSalary": 7.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer QA",
+          "yearsOfExperience": 15,
+          "salary": 7.2
+        }
+      ]
+    },
+    {
+      "role": "nlp",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 27,
+      "individualSalaries": [
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "Web3",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 27,
+      "minSalary": 27,
+      "individualSalaries": [
+        {
+          "role": "Lead Technical Support Engineer",
+          "yearsOfExperience": 17,
+          "salary": 27
+        }
+      ]
+    }
+  ],
+  "raw_salary_values": [
+    {
+      "role": "backend",
+      "salary": 7.2,
+      "yearsOfExperience": 15,
+      "full_record": {
+        "role": "Software Engineer QA",
+        "yearsOfExperience": 15,
+        "salary": 7.2
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 7.2,
+      "yearsOfExperience": 15,
+      "full_record": {
+        "role": "Software Engineer QA",
+        "yearsOfExperience": 15,
+        "salary": 7.2
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 7.2,
+      "yearsOfExperience": 15,
+      "full_record": {
+        "role": "Software Engineer QA",
+        "yearsOfExperience": 15,
+        "salary": 7.2
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 7.2,
+      "yearsOfExperience": 15,
+      "full_record": {
+        "role": "Software Engineer QA",
+        "yearsOfExperience": 15,
+        "salary": 7.2
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 7.2,
+      "yearsOfExperience": 15,
+      "full_record": {
+        "role": "Software Engineer QA",
+        "yearsOfExperience": 15,
+        "salary": 7.2
+      }
+    },
+    {
+      "role": "nlp",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 27,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Lead Technical Support Engineer",
+        "yearsOfExperience": 17,
+        "salary": 27
+      }
+    }
+  ],
+  "url": "https://www.weekday.works/salary/what-salary-does-ciphercloud-pay"
+}
+
+PROCESSED SALARY RECORDS:
+--------------------------------------------------------------------------------
+
+Record #1:
+  Company: CipherCloud
+  Role: Software Engineer QA
+  Location: India
+  Base Salary: 720000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 720000.0
+  Years of Experience: 15
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #2:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #3:
+  Company: CipherCloud
+  Role: Software Engineer QA
+  Location: India
+  Base Salary: 720000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 720000.0
+  Years of Experience: 15
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #4:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #5:
+  Company: CipherCloud
+  Role: Software Engineer QA
+  Location: India
+  Base Salary: 720000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 720000.0
+  Years of Experience: 15
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #6:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #7:
+  Company: CipherCloud
+  Role: Software Engineer QA
+  Location: India
+  Base Salary: 720000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 720000.0
+  Years of Experience: 15
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #8:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #9:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #10:
+  Company: CipherCloud
+  Role: Software Engineer QA
+  Location: India
+  Base Salary: 720000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 720000.0
+  Years of Experience: 15
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #11:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+Record #12:
+  Company: CipherCloud
+  Role: Lead Technical Support Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-ciphercloud-pay
+
+================================================================================

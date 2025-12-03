@@ -1,0 +1,5215 @@
+================================================================================
+Company: Appian
+Source: weekday
+Timestamp: 20251204_004722
+================================================================================
+
+RAW SALARY VALUES (ORIGINAL FORMAT):
+--------------------------------------------------------------------------------
+
+Raw Value #1:
+  Role: backend
+  Salary (raw): 29 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #2:
+  Role: backend
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #3:
+  Role: backend
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #4:
+  Role: backend
+  Salary (raw): 6.9 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #5:
+  Role: backend
+  Salary (raw): 21 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #6:
+  Role: backend
+  Salary (raw): 28 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #7:
+  Role: backend
+  Salary (raw): 24 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #8:
+  Role: backend
+  Salary (raw): 20 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #9:
+  Role: backend
+  Salary (raw): 17 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #10:
+  Role: backend
+  Salary (raw): 30 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #11:
+  Role: backend
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #12:
+  Role: backend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #13:
+  Role: backend
+  Salary (raw): 50 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #14:
+  Role: backend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #15:
+  Role: backend
+  Salary (raw): 61 (type: int)
+  Years of Experience: 18
+  Location: N/A
+
+Raw Value #16:
+  Role: backend
+  Salary (raw): 34 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #17:
+  Role: backend
+  Salary (raw): 34 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #18:
+  Role: backend
+  Salary (raw): 28 (type: int)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #19:
+  Role: backend
+  Salary (raw): 51 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #20:
+  Role: backend
+  Salary (raw): 9 (type: int)
+  Years of Experience: 41
+  Location: N/A
+
+Raw Value #21:
+  Role: backend
+  Salary (raw): 45 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #22:
+  Role: backend
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #23:
+  Role: backend
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #24:
+  Role: backend
+  Salary (raw): 30 (type: int)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #25:
+  Role: backend
+  Salary (raw): 34 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #26:
+  Role: frontend
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #27:
+  Role: frontend
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #28:
+  Role: frontend
+  Salary (raw): 30.6 (type: float)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #29:
+  Role: frontend
+  Salary (raw): 6.9 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #30:
+  Role: frontend
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #31:
+  Role: frontend
+  Salary (raw): 37 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #32:
+  Role: frontend
+  Salary (raw): 17 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #33:
+  Role: frontend
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #34:
+  Role: frontend
+  Salary (raw): 28 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #35:
+  Role: frontend
+  Salary (raw): 75 (type: int)
+  Years of Experience: 23
+  Location: N/A
+
+Raw Value #36:
+  Role: frontend
+  Salary (raw): 38 (type: int)
+  Years of Experience: 16
+  Location: N/A
+
+Raw Value #37:
+  Role: fullstack
+  Salary (raw): 29 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #38:
+  Role: fullstack
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #39:
+  Role: fullstack
+  Salary (raw): 15.2 (type: float)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #40:
+  Role: fullstack
+  Salary (raw): 6.9 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #41:
+  Role: fullstack
+  Salary (raw): 21 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #42:
+  Role: fullstack
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #43:
+  Role: fullstack
+  Salary (raw): 28 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #44:
+  Role: fullstack
+  Salary (raw): 24 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #45:
+  Role: fullstack
+  Salary (raw): 20 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #46:
+  Role: fullstack
+  Salary (raw): 17 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #47:
+  Role: fullstack
+  Salary (raw): 30 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #48:
+  Role: fullstack
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #49:
+  Role: fullstack
+  Salary (raw): 27 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #50:
+  Role: fullstack
+  Salary (raw): 50 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #51:
+  Role: fullstack
+  Salary (raw): 27 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #52:
+  Role: fullstack
+  Salary (raw): 61 (type: int)
+  Years of Experience: 18
+  Location: N/A
+
+Raw Value #53:
+  Role: fullstack
+  Salary (raw): 34 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #54:
+  Role: fullstack
+  Salary (raw): 34 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #55:
+  Role: fullstack
+  Salary (raw): 28 (type: int)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #56:
+  Role: fullstack
+  Salary (raw): 51 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #57:
+  Role: fullstack
+  Salary (raw): 45 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #58:
+  Role: fullstack
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #59:
+  Role: fullstack
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #60:
+  Role: fullstack
+  Salary (raw): 30 (type: int)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #61:
+  Role: fullstack
+  Salary (raw): 34 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #62:
+  Role: flutter
+  Salary (raw): 29 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #63:
+  Role: android
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #64:
+  Role: tech lead
+  Salary (raw): 30.6 (type: float)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #65:
+  Role: tech lead
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #66:
+  Role: tech lead
+  Salary (raw): 28 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #67:
+  Role: tech lead
+  Salary (raw): 6 (type: int)
+  Years of Experience: 24
+  Location: N/A
+
+Raw Value #68:
+  Role: tech lead
+  Salary (raw): 20 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #69:
+  Role: tech lead
+  Salary (raw): 37 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #70:
+  Role: tech lead
+  Salary (raw): 40 (type: int)
+  Years of Experience: 16
+  Location: N/A
+
+Raw Value #71:
+  Role: tech lead
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #72:
+  Role: tech lead
+  Salary (raw): 27 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #73:
+  Role: tech lead
+  Salary (raw): 61 (type: int)
+  Years of Experience: 18
+  Location: N/A
+
+Raw Value #74:
+  Role: tech lead
+  Salary (raw): 34 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #75:
+  Role: tech lead
+  Salary (raw): 32.5 (type: float)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #76:
+  Role: tech lead
+  Salary (raw): 9 (type: int)
+  Years of Experience: 41
+  Location: N/A
+
+Raw Value #77:
+  Role: tech lead
+  Salary (raw): 45 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #78:
+  Role: tech lead
+  Salary (raw): 23.5 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #79:
+  Role: tech lead
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #80:
+  Role: tech lead
+  Salary (raw): 14 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #81:
+  Role: dev-ops
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #82:
+  Role: dev-ops
+  Salary (raw): 28 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #83:
+  Role: dev-ops
+  Salary (raw): 24 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #84:
+  Role: dev-ops
+  Salary (raw): 17 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #85:
+  Role: dev-ops
+  Salary (raw): 30 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #86:
+  Role: dev-ops
+  Salary (raw): 40 (type: int)
+  Years of Experience: 16
+  Location: N/A
+
+Raw Value #87:
+  Role: dev-ops
+  Salary (raw): 9.75 (type: float)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #88:
+  Role: dev-ops
+  Salary (raw): 50 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #89:
+  Role: dev-ops
+  Salary (raw): 28 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #90:
+  Role: dev-ops
+  Salary (raw): 27 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #91:
+  Role: dev-ops
+  Salary (raw): 34 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #92:
+  Role: dev-ops
+  Salary (raw): 51 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #93:
+  Role: dev-ops
+  Salary (raw): 75 (type: int)
+  Years of Experience: 23
+  Location: N/A
+
+Raw Value #94:
+  Role: dev-ops
+  Salary (raw): 9 (type: int)
+  Years of Experience: 41
+  Location: N/A
+
+Raw Value #95:
+  Role: dev-ops
+  Salary (raw): 34 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #96:
+  Role: data science
+  Salary (raw): 9 (type: int)
+  Years of Experience: 41
+  Location: N/A
+
+Raw Value #97:
+  Role: data science
+  Salary (raw): 30 (type: int)
+  Years of Experience: 7
+  Location: N/A
+
+Raw Value #98:
+  Role: data science
+  Salary (raw): 34 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #99:
+  Role: nlp
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #100:
+  Role: deep-learning
+  Salary (raw): 29 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #101:
+  Role: deep-learning
+  Salary (raw): 21 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #102:
+  Role: deep-learning
+  Salary (raw): 34 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #103:
+  Role: test / qa
+  Salary (raw): 30 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #104:
+  Role: Web3
+  Salary (raw): 30.6 (type: float)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #105:
+  Role: Web3
+  Salary (raw): 24 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #106:
+  Role: sre
+  Salary (raw): 61 (type: int)
+  Years of Experience: 18
+  Location: N/A
+
+Raw Value #107:
+  Role: data-infrastructure
+  Salary (raw): 6.9 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #108:
+  Role: data-infrastructure
+  Salary (raw): 55 (type: int)
+  Years of Experience: 2
+  Location: N/A
+
+Raw Value #109:
+  Role: data-infrastructure
+  Salary (raw): 28 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #110:
+  Role: data-infrastructure
+  Salary (raw): 35 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #111:
+  Role: data-infrastructure
+  Salary (raw): 50 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #112:
+  Role: data-infrastructure
+  Salary (raw): 28 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #113:
+  Role: data-infrastructure
+  Salary (raw): 34 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #114:
+  Role: data-infrastructure
+  Salary (raw): 45 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #115:
+  Role: hr
+  Salary (raw): 25 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+FULL RAW JSON DATA:
+--------------------------------------------------------------------------------
+{
+  "raw_data": {
+    "companyId": "appian",
+    "averageSalaries": [
+      {
+        "yearsOfExperience": 1,
+        "averageSalary": 22.42
+      },
+      {
+        "yearsOfExperience": 5,
+        "averageSalary": 28.82
+      },
+      {
+        "yearsOfExperience": 10,
+        "averageSalary": 29.17
+      }
+    ],
+    "maxSalary": 75,
+    "minSalary": 3,
+    "roles": [
+      {
+        "role": "backend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 20.72
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 28.95
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 29.36
+          }
+        ],
+        "maxSalary": 61,
+        "minSalary": 6.9,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 5,
+            "salary": 29,
+            "stocks": 1,
+            "bonus": 2
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 7,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 8,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Quality Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 6.9
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 6,
+            "salary": 21,
+            "stocks": 5,
+            "bonus": 5
+          },
+          {
+            "role": "SSE",
+            "yearsOfExperience": 8,
+            "salary": 28
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 24
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 20
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 17
+          },
+          {
+            "role": "Senior Test Automation Engineer II",
+            "yearsOfExperience": 11,
+            "salary": 30,
+            "stocks": 300,
+            "bonus": 3
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 27,
+            "bonus": 3
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 50,
+            "stocks": 2,
+            "bonus": 2.5
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 4,
+            "salary": 27,
+            "bonus": 2.5
+          },
+          {
+            "role": "Lead Software Engineer",
+            "yearsOfExperience": 18,
+            "salary": 61
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 12,
+            "salary": 34
+          },
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 4,
+            "salary": 34,
+            "stocks": 1,
+            "bonus": 2.5
+          },
+          {
+            "role": "SDE 2",
+            "yearsOfExperience": 7,
+            "salary": 28
+          },
+          {
+            "role": "Technical Mentor, Software development",
+            "yearsOfExperience": 10,
+            "salary": 51
+          },
+          {
+            "role": "Solutions Consultant",
+            "yearsOfExperience": 41,
+            "salary": 9
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 14,
+            "salary": 45
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          },
+          {
+            "role": "Product manager 2",
+            "yearsOfExperience": 7,
+            "salary": 30
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 34,
+            "bonus": 4
+          }
+        ]
+      },
+      {
+        "role": "frontend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 13.9
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 38.1
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 29.83
+          }
+        ],
+        "maxSalary": 75,
+        "minSalary": 6.9,
+        "individualSalaries": [
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 7,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 8,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Platform Product Manager",
+            "yearsOfExperience": 13,
+            "salary": 30.6
+          },
+          {
+            "role": "Senior Quality Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 6.9
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 37
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 17
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 28
+          },
+          {
+            "role": "Product Management",
+            "yearsOfExperience": 23,
+            "salary": 75
+          },
+          {
+            "role": "Senior User Experience Designer",
+            "yearsOfExperience": 16,
+            "salary": 38
+          }
+        ]
+      },
+      {
+        "role": "fullstack",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 27.63
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 29.08
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 30.06
+          }
+        ],
+        "maxSalary": 61,
+        "minSalary": 6.9,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 5,
+            "salary": 29,
+            "stocks": 1,
+            "bonus": 2
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 7,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 8,
+            "salary": 15.2
+          },
+          {
+            "role": "Senior Quality Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 6.9
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 6,
+            "salary": 21,
+            "stocks": 5,
+            "bonus": 5
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          },
+          {
+            "role": "SSE",
+            "yearsOfExperience": 8,
+            "salary": 28
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 24
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 20
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 17
+          },
+          {
+            "role": "Senior Test Automation Engineer II",
+            "yearsOfExperience": 11,
+            "salary": 30,
+            "stocks": 300,
+            "bonus": 3
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 27,
+            "bonus": 3
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 50,
+            "stocks": 2,
+            "bonus": 2.5
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 4,
+            "salary": 27,
+            "bonus": 2.5
+          },
+          {
+            "role": "Lead Software Engineer",
+            "yearsOfExperience": 18,
+            "salary": 61
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 12,
+            "salary": 34
+          },
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 4,
+            "salary": 34,
+            "stocks": 1,
+            "bonus": 2.5
+          },
+          {
+            "role": "SDE 2",
+            "yearsOfExperience": 7,
+            "salary": 28
+          },
+          {
+            "role": "Technical Mentor, Software development",
+            "yearsOfExperience": 10,
+            "salary": 51
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 14,
+            "salary": 45
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          },
+          {
+            "role": "Product manager 2",
+            "yearsOfExperience": 7,
+            "salary": 30
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 34,
+            "bonus": 4
+          }
+        ]
+      },
+      {
+        "role": "flutter",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 29,
+        "minSalary": 29,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 6,
+            "salary": 29,
+            "stocks": 1,
+            "bonus": 3
+          }
+        ]
+      },
+      {
+        "role": "android",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 35,
+        "minSalary": 35,
+        "individualSalaries": [
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          }
+        ]
+      },
+      {
+        "role": "tech lead",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 39.4
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 26.99
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 33.28
+          }
+        ],
+        "maxSalary": 61,
+        "minSalary": 6,
+        "individualSalaries": [
+          {
+            "role": "Senior Platform Product Manager",
+            "yearsOfExperience": 13,
+            "salary": 30.6
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          },
+          {
+            "role": "SSE",
+            "yearsOfExperience": 8,
+            "salary": 28
+          },
+          {
+            "role": "Senior Partner Sales Manager, India & South East Asia",
+            "yearsOfExperience": 24,
+            "salary": 6
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 20
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 37
+          },
+          {
+            "role": "Senior Manager, Software Development",
+            "yearsOfExperience": 16,
+            "salary": 40
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 27,
+            "bonus": 3
+          },
+          {
+            "role": "Lead Software Engineer",
+            "yearsOfExperience": 18,
+            "salary": 61
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 12,
+            "salary": 34
+          },
+          {
+            "role": "Manager - User Experience",
+            "yearsOfExperience": 17,
+            "salary": 32.5,
+            "stocks": 150,
+            "bonus": 3.5
+          },
+          {
+            "role": "Solutions Consultant",
+            "yearsOfExperience": 41,
+            "salary": 9
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 14,
+            "salary": 45
+          },
+          {
+            "role": "Senior Quality Engineer",
+            "yearsOfExperience": 10,
+            "salary": 23.5
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 13,
+            "salary": 14
+          }
+        ]
+      },
+      {
+        "role": "dev-ops",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 27.92
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 32.96
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 36.11
+          }
+        ],
+        "maxSalary": 75,
+        "minSalary": 9,
+        "individualSalaries": [
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          },
+          {
+            "role": "SSE",
+            "yearsOfExperience": 8,
+            "salary": 28
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 24
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 17
+          },
+          {
+            "role": "Senior Test Automation Engineer II",
+            "yearsOfExperience": 11,
+            "salary": 30,
+            "stocks": 300,
+            "bonus": 3
+          },
+          {
+            "role": "Senior Manager, Software Development",
+            "yearsOfExperience": 16,
+            "salary": 40
+          },
+          {
+            "role": "Workplace & Facilities Specialist",
+            "yearsOfExperience": 12,
+            "salary": 9.75
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 50,
+            "stocks": 2,
+            "bonus": 2.5
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 28
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 4,
+            "salary": 27,
+            "bonus": 2.5
+          },
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 4,
+            "salary": 34,
+            "stocks": 1,
+            "bonus": 2.5
+          },
+          {
+            "role": "Technical Mentor, Software development",
+            "yearsOfExperience": 10,
+            "salary": 51
+          },
+          {
+            "role": "Product Management",
+            "yearsOfExperience": 23,
+            "salary": 75
+          },
+          {
+            "role": "Solutions Consultant",
+            "yearsOfExperience": 41,
+            "salary": 9
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 34,
+            "bonus": 4
+          }
+        ]
+      },
+      {
+        "role": "data science",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 35.33
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 18.76
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 29.39
+          }
+        ],
+        "maxSalary": 34,
+        "minSalary": 9,
+        "individualSalaries": [
+          {
+            "role": "Solutions Consultant",
+            "yearsOfExperience": 41,
+            "salary": 9
+          },
+          {
+            "role": "Product manager 2",
+            "yearsOfExperience": 7,
+            "salary": 30
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 34,
+            "bonus": 4
+          }
+        ]
+      },
+      {
+        "role": "nlp",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 55,
+        "minSalary": 55,
+        "individualSalaries": [
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          }
+        ]
+      },
+      {
+        "role": "deep-learning",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 73.5
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 25
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 34,
+        "minSalary": 21,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 5,
+            "salary": 29,
+            "stocks": 1,
+            "bonus": 2
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 6,
+            "salary": 21,
+            "stocks": 5,
+            "bonus": 5
+          },
+          {
+            "role": "Software Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 34,
+            "bonus": 4
+          }
+        ]
+      },
+      {
+        "role": "test / qa",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 30,
+        "minSalary": 30,
+        "individualSalaries": [
+          {
+            "role": "Senior Test Automation Engineer II",
+            "yearsOfExperience": 11,
+            "salary": 30,
+            "stocks": 300,
+            "bonus": 3
+          }
+        ]
+      },
+      {
+        "role": "Web3",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 109.8
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 50.4
+          }
+        ],
+        "maxSalary": 30.6,
+        "minSalary": 24,
+        "individualSalaries": [
+          {
+            "role": "Senior Platform Product Manager",
+            "yearsOfExperience": 13,
+            "salary": 30.6
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 14,
+            "salary": 24
+          }
+        ]
+      },
+      {
+        "role": "sre",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 61,
+        "minSalary": 61,
+        "individualSalaries": [
+          {
+            "role": "Lead Software Engineer",
+            "yearsOfExperience": 18,
+            "salary": 61
+          }
+        ]
+      },
+      {
+        "role": "data-infrastructure",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 42.51
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 33.66
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 33.78
+          }
+        ],
+        "maxSalary": 55,
+        "minSalary": 6.9,
+        "individualSalaries": [
+          {
+            "role": "Senior Quality Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 6.9
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 2,
+            "salary": 55
+          },
+          {
+            "role": "SSE",
+            "yearsOfExperience": 8,
+            "salary": 28
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 12,
+            "salary": 35,
+            "stocks": 12
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 9,
+            "salary": 50,
+            "stocks": 2,
+            "bonus": 2.5
+          },
+          {
+            "role": "Senior Product Manager",
+            "yearsOfExperience": 9,
+            "salary": 28
+          },
+          {
+            "role": "Software Engineer 2",
+            "yearsOfExperience": 4,
+            "salary": 34,
+            "stocks": 1,
+            "bonus": 2.5
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 14,
+            "salary": 45
+          }
+        ]
+      },
+      {
+        "role": "hr",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 25,
+        "minSalary": 25,
+        "individualSalaries": [
+          {
+            "role": "Human Resources Manager",
+            "yearsOfExperience": 13,
+            "salary": 25
+          }
+        ]
+      }
+    ]
+  },
+  "roles": [
+    {
+      "role": "backend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 20.72
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 28.95
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 29.36
+        }
+      ],
+      "maxSalary": 61,
+      "minSalary": 6.9,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 5,
+          "salary": 29,
+          "stocks": 1,
+          "bonus": 2
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 7,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 8,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Quality Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 6.9
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 6,
+          "salary": 21,
+          "stocks": 5,
+          "bonus": 5
+        },
+        {
+          "role": "SSE",
+          "yearsOfExperience": 8,
+          "salary": 28
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 24
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 20
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 17
+        },
+        {
+          "role": "Senior Test Automation Engineer II",
+          "yearsOfExperience": 11,
+          "salary": 30,
+          "stocks": 300,
+          "bonus": 3
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 27,
+          "bonus": 3
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 50,
+          "stocks": 2,
+          "bonus": 2.5
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 4,
+          "salary": 27,
+          "bonus": 2.5
+        },
+        {
+          "role": "Lead Software Engineer",
+          "yearsOfExperience": 18,
+          "salary": 61
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 12,
+          "salary": 34
+        },
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 4,
+          "salary": 34,
+          "stocks": 1,
+          "bonus": 2.5
+        },
+        {
+          "role": "SDE 2",
+          "yearsOfExperience": 7,
+          "salary": 28
+        },
+        {
+          "role": "Technical Mentor, Software development",
+          "yearsOfExperience": 10,
+          "salary": 51
+        },
+        {
+          "role": "Solutions Consultant",
+          "yearsOfExperience": 41,
+          "salary": 9
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 14,
+          "salary": 45
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        },
+        {
+          "role": "Product manager 2",
+          "yearsOfExperience": 7,
+          "salary": 30
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 34,
+          "bonus": 4
+        }
+      ]
+    },
+    {
+      "role": "frontend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 13.9
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 38.1
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 29.83
+        }
+      ],
+      "maxSalary": 75,
+      "minSalary": 6.9,
+      "individualSalaries": [
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 7,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 8,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Platform Product Manager",
+          "yearsOfExperience": 13,
+          "salary": 30.6
+        },
+        {
+          "role": "Senior Quality Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 6.9
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 37
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 17
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 28
+        },
+        {
+          "role": "Product Management",
+          "yearsOfExperience": 23,
+          "salary": 75
+        },
+        {
+          "role": "Senior User Experience Designer",
+          "yearsOfExperience": 16,
+          "salary": 38
+        }
+      ]
+    },
+    {
+      "role": "fullstack",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 27.63
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 29.08
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 30.06
+        }
+      ],
+      "maxSalary": 61,
+      "minSalary": 6.9,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 5,
+          "salary": 29,
+          "stocks": 1,
+          "bonus": 2
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 7,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 8,
+          "salary": 15.2
+        },
+        {
+          "role": "Senior Quality Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 6.9
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 6,
+          "salary": 21,
+          "stocks": 5,
+          "bonus": 5
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        },
+        {
+          "role": "SSE",
+          "yearsOfExperience": 8,
+          "salary": 28
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 24
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 20
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 17
+        },
+        {
+          "role": "Senior Test Automation Engineer II",
+          "yearsOfExperience": 11,
+          "salary": 30,
+          "stocks": 300,
+          "bonus": 3
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 27,
+          "bonus": 3
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 50,
+          "stocks": 2,
+          "bonus": 2.5
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 4,
+          "salary": 27,
+          "bonus": 2.5
+        },
+        {
+          "role": "Lead Software Engineer",
+          "yearsOfExperience": 18,
+          "salary": 61
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 12,
+          "salary": 34
+        },
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 4,
+          "salary": 34,
+          "stocks": 1,
+          "bonus": 2.5
+        },
+        {
+          "role": "SDE 2",
+          "yearsOfExperience": 7,
+          "salary": 28
+        },
+        {
+          "role": "Technical Mentor, Software development",
+          "yearsOfExperience": 10,
+          "salary": 51
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 14,
+          "salary": 45
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        },
+        {
+          "role": "Product manager 2",
+          "yearsOfExperience": 7,
+          "salary": 30
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 34,
+          "bonus": 4
+        }
+      ]
+    },
+    {
+      "role": "flutter",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 29,
+      "minSalary": 29,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 6,
+          "salary": 29,
+          "stocks": 1,
+          "bonus": 3
+        }
+      ]
+    },
+    {
+      "role": "android",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 35,
+      "minSalary": 35,
+      "individualSalaries": [
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        }
+      ]
+    },
+    {
+      "role": "tech lead",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 39.4
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 26.99
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 33.28
+        }
+      ],
+      "maxSalary": 61,
+      "minSalary": 6,
+      "individualSalaries": [
+        {
+          "role": "Senior Platform Product Manager",
+          "yearsOfExperience": 13,
+          "salary": 30.6
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        },
+        {
+          "role": "SSE",
+          "yearsOfExperience": 8,
+          "salary": 28
+        },
+        {
+          "role": "Senior Partner Sales Manager, India & South East Asia",
+          "yearsOfExperience": 24,
+          "salary": 6
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 20
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 37
+        },
+        {
+          "role": "Senior Manager, Software Development",
+          "yearsOfExperience": 16,
+          "salary": 40
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 27,
+          "bonus": 3
+        },
+        {
+          "role": "Lead Software Engineer",
+          "yearsOfExperience": 18,
+          "salary": 61
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 12,
+          "salary": 34
+        },
+        {
+          "role": "Manager - User Experience",
+          "yearsOfExperience": 17,
+          "salary": 32.5,
+          "stocks": 150,
+          "bonus": 3.5
+        },
+        {
+          "role": "Solutions Consultant",
+          "yearsOfExperience": 41,
+          "salary": 9
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 14,
+          "salary": 45
+        },
+        {
+          "role": "Senior Quality Engineer",
+          "yearsOfExperience": 10,
+          "salary": 23.5
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 13,
+          "salary": 14
+        }
+      ]
+    },
+    {
+      "role": "dev-ops",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 27.92
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 32.96
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 36.11
+        }
+      ],
+      "maxSalary": 75,
+      "minSalary": 9,
+      "individualSalaries": [
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        },
+        {
+          "role": "SSE",
+          "yearsOfExperience": 8,
+          "salary": 28
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 24
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 17
+        },
+        {
+          "role": "Senior Test Automation Engineer II",
+          "yearsOfExperience": 11,
+          "salary": 30,
+          "stocks": 300,
+          "bonus": 3
+        },
+        {
+          "role": "Senior Manager, Software Development",
+          "yearsOfExperience": 16,
+          "salary": 40
+        },
+        {
+          "role": "Workplace & Facilities Specialist",
+          "yearsOfExperience": 12,
+          "salary": 9.75
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 50,
+          "stocks": 2,
+          "bonus": 2.5
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 28
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 4,
+          "salary": 27,
+          "bonus": 2.5
+        },
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 4,
+          "salary": 34,
+          "stocks": 1,
+          "bonus": 2.5
+        },
+        {
+          "role": "Technical Mentor, Software development",
+          "yearsOfExperience": 10,
+          "salary": 51
+        },
+        {
+          "role": "Product Management",
+          "yearsOfExperience": 23,
+          "salary": 75
+        },
+        {
+          "role": "Solutions Consultant",
+          "yearsOfExperience": 41,
+          "salary": 9
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 34,
+          "bonus": 4
+        }
+      ]
+    },
+    {
+      "role": "data science",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 35.33
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 18.76
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 29.39
+        }
+      ],
+      "maxSalary": 34,
+      "minSalary": 9,
+      "individualSalaries": [
+        {
+          "role": "Solutions Consultant",
+          "yearsOfExperience": 41,
+          "salary": 9
+        },
+        {
+          "role": "Product manager 2",
+          "yearsOfExperience": 7,
+          "salary": 30
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 34,
+          "bonus": 4
+        }
+      ]
+    },
+    {
+      "role": "nlp",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 55,
+      "minSalary": 55,
+      "individualSalaries": [
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        }
+      ]
+    },
+    {
+      "role": "deep-learning",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 73.5
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 25
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 34,
+      "minSalary": 21,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 5,
+          "salary": 29,
+          "stocks": 1,
+          "bonus": 2
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 6,
+          "salary": 21,
+          "stocks": 5,
+          "bonus": 5
+        },
+        {
+          "role": "Software Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 34,
+          "bonus": 4
+        }
+      ]
+    },
+    {
+      "role": "test / qa",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 30,
+      "minSalary": 30,
+      "individualSalaries": [
+        {
+          "role": "Senior Test Automation Engineer II",
+          "yearsOfExperience": 11,
+          "salary": 30,
+          "stocks": 300,
+          "bonus": 3
+        }
+      ]
+    },
+    {
+      "role": "Web3",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 109.8
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 50.4
+        }
+      ],
+      "maxSalary": 30.6,
+      "minSalary": 24,
+      "individualSalaries": [
+        {
+          "role": "Senior Platform Product Manager",
+          "yearsOfExperience": 13,
+          "salary": 30.6
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 14,
+          "salary": 24
+        }
+      ]
+    },
+    {
+      "role": "sre",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 61,
+      "minSalary": 61,
+      "individualSalaries": [
+        {
+          "role": "Lead Software Engineer",
+          "yearsOfExperience": 18,
+          "salary": 61
+        }
+      ]
+    },
+    {
+      "role": "data-infrastructure",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 42.51
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 33.66
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 33.78
+        }
+      ],
+      "maxSalary": 55,
+      "minSalary": 6.9,
+      "individualSalaries": [
+        {
+          "role": "Senior Quality Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 6.9
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 2,
+          "salary": 55
+        },
+        {
+          "role": "SSE",
+          "yearsOfExperience": 8,
+          "salary": 28
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 12,
+          "salary": 35,
+          "stocks": 12
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 9,
+          "salary": 50,
+          "stocks": 2,
+          "bonus": 2.5
+        },
+        {
+          "role": "Senior Product Manager",
+          "yearsOfExperience": 9,
+          "salary": 28
+        },
+        {
+          "role": "Software Engineer 2",
+          "yearsOfExperience": 4,
+          "salary": 34,
+          "stocks": 1,
+          "bonus": 2.5
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 14,
+          "salary": 45
+        }
+      ]
+    },
+    {
+      "role": "hr",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 25,
+      "minSalary": 25,
+      "individualSalaries": [
+        {
+          "role": "Human Resources Manager",
+          "yearsOfExperience": 13,
+          "salary": 25
+        }
+      ]
+    }
+  ],
+  "raw_salary_values": [
+    {
+      "role": "backend",
+      "salary": 29,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 5,
+        "salary": 29,
+        "stocks": 1,
+        "bonus": 2
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 15.2,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 7,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 15.2,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 8,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 6.9,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Quality Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 6.9
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 21,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 6,
+        "salary": 21,
+        "stocks": 5,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 28,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "SSE",
+        "yearsOfExperience": 8,
+        "salary": 28
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 24,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 24
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 20,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 20
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 17,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 17
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 30,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Test Automation Engineer II",
+        "yearsOfExperience": 11,
+        "salary": 30,
+        "stocks": 300,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 27,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 27,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 50,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 50,
+        "stocks": 2,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 27,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 4,
+        "salary": 27,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 61,
+      "yearsOfExperience": 18,
+      "full_record": {
+        "role": "Lead Software Engineer",
+        "yearsOfExperience": 18,
+        "salary": 61
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 34,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 12,
+        "salary": 34
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 34,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 4,
+        "salary": 34,
+        "stocks": 1,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 28,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "SDE 2",
+        "yearsOfExperience": 7,
+        "salary": 28
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 51,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Technical Mentor, Software development",
+        "yearsOfExperience": 10,
+        "salary": 51
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 9,
+      "yearsOfExperience": 41,
+      "full_record": {
+        "role": "Solutions Consultant",
+        "yearsOfExperience": 41,
+        "salary": 9
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 45,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 14,
+        "salary": 45
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 30,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Product manager 2",
+        "yearsOfExperience": 7,
+        "salary": 30
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 34,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 34,
+        "bonus": 4
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 15.2,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 7,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 15.2,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 8,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 30.6,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Platform Product Manager",
+        "yearsOfExperience": 13,
+        "salary": 30.6
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 6.9,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Quality Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 6.9
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 37,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 37
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 17,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 17
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 28,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 28
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 75,
+      "yearsOfExperience": 23,
+      "full_record": {
+        "role": "Product Management",
+        "yearsOfExperience": 23,
+        "salary": 75
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 38,
+      "yearsOfExperience": 16,
+      "full_record": {
+        "role": "Senior User Experience Designer",
+        "yearsOfExperience": 16,
+        "salary": 38
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 29,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 5,
+        "salary": 29,
+        "stocks": 1,
+        "bonus": 2
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 15.2,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 7,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 15.2,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 8,
+        "salary": 15.2
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 6.9,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Quality Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 6.9
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 21,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 6,
+        "salary": 21,
+        "stocks": 5,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 28,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "SSE",
+        "yearsOfExperience": 8,
+        "salary": 28
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 24,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 24
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 20,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 20
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 17,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 17
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 30,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Test Automation Engineer II",
+        "yearsOfExperience": 11,
+        "salary": 30,
+        "stocks": 300,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 27,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 27,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 50,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 50,
+        "stocks": 2,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 27,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 4,
+        "salary": 27,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 61,
+      "yearsOfExperience": 18,
+      "full_record": {
+        "role": "Lead Software Engineer",
+        "yearsOfExperience": 18,
+        "salary": 61
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 34,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 12,
+        "salary": 34
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 34,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 4,
+        "salary": 34,
+        "stocks": 1,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 28,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "SDE 2",
+        "yearsOfExperience": 7,
+        "salary": 28
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 51,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Technical Mentor, Software development",
+        "yearsOfExperience": 10,
+        "salary": 51
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 45,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 14,
+        "salary": 45
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 30,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Product manager 2",
+        "yearsOfExperience": 7,
+        "salary": 30
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 34,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 34,
+        "bonus": 4
+      }
+    },
+    {
+      "role": "flutter",
+      "salary": 29,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 6,
+        "salary": 29,
+        "stocks": 1,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "android",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 30.6,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Platform Product Manager",
+        "yearsOfExperience": 13,
+        "salary": 30.6
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 28,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "SSE",
+        "yearsOfExperience": 8,
+        "salary": 28
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 6,
+      "yearsOfExperience": 24,
+      "full_record": {
+        "role": "Senior Partner Sales Manager, India & South East Asia",
+        "yearsOfExperience": 24,
+        "salary": 6
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 20,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 20
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 37,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 37
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 40,
+      "yearsOfExperience": 16,
+      "full_record": {
+        "role": "Senior Manager, Software Development",
+        "yearsOfExperience": 16,
+        "salary": 40
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 27,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 27,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 61,
+      "yearsOfExperience": 18,
+      "full_record": {
+        "role": "Lead Software Engineer",
+        "yearsOfExperience": 18,
+        "salary": 61
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 34,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 12,
+        "salary": 34
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 32.5,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Manager - User Experience",
+        "yearsOfExperience": 17,
+        "salary": 32.5,
+        "stocks": 150,
+        "bonus": 3.5
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 9,
+      "yearsOfExperience": 41,
+      "full_record": {
+        "role": "Solutions Consultant",
+        "yearsOfExperience": 41,
+        "salary": 9
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 45,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 14,
+        "salary": 45
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 23.5,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Quality Engineer",
+        "yearsOfExperience": 10,
+        "salary": 23.5
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 14,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 13,
+        "salary": 14
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 28,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "SSE",
+        "yearsOfExperience": 8,
+        "salary": 28
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 24,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 24
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 17,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 17
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 30,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Test Automation Engineer II",
+        "yearsOfExperience": 11,
+        "salary": 30,
+        "stocks": 300,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 40,
+      "yearsOfExperience": 16,
+      "full_record": {
+        "role": "Senior Manager, Software Development",
+        "yearsOfExperience": 16,
+        "salary": 40
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 9.75,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Workplace & Facilities Specialist",
+        "yearsOfExperience": 12,
+        "salary": 9.75
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 50,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 50,
+        "stocks": 2,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 28,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 28
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 27,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 4,
+        "salary": 27,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 34,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 4,
+        "salary": 34,
+        "stocks": 1,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 51,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Technical Mentor, Software development",
+        "yearsOfExperience": 10,
+        "salary": 51
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 75,
+      "yearsOfExperience": 23,
+      "full_record": {
+        "role": "Product Management",
+        "yearsOfExperience": 23,
+        "salary": 75
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 9,
+      "yearsOfExperience": 41,
+      "full_record": {
+        "role": "Solutions Consultant",
+        "yearsOfExperience": 41,
+        "salary": 9
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 34,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 34,
+        "bonus": 4
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 9,
+      "yearsOfExperience": 41,
+      "full_record": {
+        "role": "Solutions Consultant",
+        "yearsOfExperience": 41,
+        "salary": 9
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 30,
+      "yearsOfExperience": 7,
+      "full_record": {
+        "role": "Product manager 2",
+        "yearsOfExperience": 7,
+        "salary": 30
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 34,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 34,
+        "bonus": 4
+      }
+    },
+    {
+      "role": "nlp",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "deep-learning",
+      "salary": 29,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 5,
+        "salary": 29,
+        "stocks": 1,
+        "bonus": 2
+      }
+    },
+    {
+      "role": "deep-learning",
+      "salary": 21,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 6,
+        "salary": 21,
+        "stocks": 5,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "deep-learning",
+      "salary": 34,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 34,
+        "bonus": 4
+      }
+    },
+    {
+      "role": "test / qa",
+      "salary": 30,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Test Automation Engineer II",
+        "yearsOfExperience": 11,
+        "salary": 30,
+        "stocks": 300,
+        "bonus": 3
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 30.6,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Senior Platform Product Manager",
+        "yearsOfExperience": 13,
+        "salary": 30.6
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 24,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 14,
+        "salary": 24
+      }
+    },
+    {
+      "role": "sre",
+      "salary": 61,
+      "yearsOfExperience": 18,
+      "full_record": {
+        "role": "Lead Software Engineer",
+        "yearsOfExperience": 18,
+        "salary": 61
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 6.9,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Quality Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 6.9
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 55,
+      "yearsOfExperience": 2,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 2,
+        "salary": 55
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 28,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "SSE",
+        "yearsOfExperience": 8,
+        "salary": 28
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 35,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 12,
+        "salary": 35,
+        "stocks": 12
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 50,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 9,
+        "salary": 50,
+        "stocks": 2,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 28,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Product Manager",
+        "yearsOfExperience": 9,
+        "salary": 28
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 34,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer 2",
+        "yearsOfExperience": 4,
+        "salary": 34,
+        "stocks": 1,
+        "bonus": 2.5
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 45,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 14,
+        "salary": 45
+      }
+    },
+    {
+      "role": "hr",
+      "salary": 25,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Human Resources Manager",
+        "yearsOfExperience": 13,
+        "salary": 25
+      }
+    }
+  ],
+  "url": "https://www.weekday.works/salary/what-salary-does-appian-pay"
+}
+
+PROCESSED SALARY RECORDS:
+--------------------------------------------------------------------------------
+
+Record #1:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 2900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2900000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #2:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #3:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #4:
+  Company: Appian
+  Role: Senior Quality Engineer II
+  Location: India
+  Base Salary: 690000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 690000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #5:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2100000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #6:
+  Company: Appian
+  Role: SSE
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #7:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2400000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #8:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #9:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 1700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1700000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #10:
+  Company: Appian
+  Role: Senior Test Automation Engineer II
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #11:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #12:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #13:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #14:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #15:
+  Company: Appian
+  Role: Lead Software Engineer
+  Location: India
+  Base Salary: 6100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6100000
+  Years of Experience: 18
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #16:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #17:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #18:
+  Company: Appian
+  Role: SDE 2
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #19:
+  Company: Appian
+  Role: Technical Mentor, Software development
+  Location: India
+  Base Salary: 5100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5100000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #20:
+  Company: Appian
+  Role: Solutions Consultant
+  Location: India
+  Base Salary: 900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 900000
+  Years of Experience: 41
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #21:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 4500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4500000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #22:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #23:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #24:
+  Company: Appian
+  Role: Product manager 2
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #25:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #26:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #27:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #28:
+  Company: Appian
+  Role: Senior Platform Product Manager
+  Location: India
+  Base Salary: 3060000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3060000.0
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #29:
+  Company: Appian
+  Role: Senior Quality Engineer II
+  Location: India
+  Base Salary: 690000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 690000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #30:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #31:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 3700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3700000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #32:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 1700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1700000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #33:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #34:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #35:
+  Company: Appian
+  Role: Product Management
+  Location: India
+  Base Salary: 7500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 7500000
+  Years of Experience: 23
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #36:
+  Company: Appian
+  Role: Senior User Experience Designer
+  Location: India
+  Base Salary: 3800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3800000
+  Years of Experience: 16
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #37:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 2900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2900000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #38:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #39:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1520000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1520000.0
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #40:
+  Company: Appian
+  Role: Senior Quality Engineer II
+  Location: India
+  Base Salary: 690000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 690000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #41:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2100000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #42:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #43:
+  Company: Appian
+  Role: SSE
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #44:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2400000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #45:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #46:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 1700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1700000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #47:
+  Company: Appian
+  Role: Senior Test Automation Engineer II
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #48:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #49:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #50:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #51:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #52:
+  Company: Appian
+  Role: Lead Software Engineer
+  Location: India
+  Base Salary: 6100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6100000
+  Years of Experience: 18
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #53:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #54:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #55:
+  Company: Appian
+  Role: SDE 2
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #56:
+  Company: Appian
+  Role: Technical Mentor, Software development
+  Location: India
+  Base Salary: 5100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5100000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #57:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 4500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4500000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #58:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #59:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #60:
+  Company: Appian
+  Role: Product manager 2
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #61:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #62:
+  Company: Appian
+  Role: Software Engineer
+  Location: India
+  Base Salary: 2900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2900000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #63:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #64:
+  Company: Appian
+  Role: Senior Platform Product Manager
+  Location: India
+  Base Salary: 3060000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3060000.0
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #65:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #66:
+  Company: Appian
+  Role: SSE
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #67:
+  Company: Appian
+  Role: Senior Partner Sales Manager, India & South East Asia
+  Location: India
+  Base Salary: 600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 600000
+  Years of Experience: 24
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #68:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #69:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 3700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3700000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #70:
+  Company: Appian
+  Role: Senior Manager, Software Development
+  Location: India
+  Base Salary: 4000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4000000
+  Years of Experience: 16
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #71:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #72:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #73:
+  Company: Appian
+  Role: Lead Software Engineer
+  Location: India
+  Base Salary: 6100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6100000
+  Years of Experience: 18
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #74:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #75:
+  Company: Appian
+  Role: Manager - User Experience
+  Location: India
+  Base Salary: 3250000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3250000.0
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #76:
+  Company: Appian
+  Role: Solutions Consultant
+  Location: India
+  Base Salary: 900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 900000
+  Years of Experience: 41
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #77:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 4500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4500000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #78:
+  Company: Appian
+  Role: Senior Quality Engineer
+  Location: India
+  Base Salary: 2350000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2350000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #79:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #80:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 1400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1400000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #81:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #82:
+  Company: Appian
+  Role: SSE
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #83:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2400000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #84:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 1700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1700000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #85:
+  Company: Appian
+  Role: Senior Test Automation Engineer II
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #86:
+  Company: Appian
+  Role: Senior Manager, Software Development
+  Location: India
+  Base Salary: 4000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4000000
+  Years of Experience: 16
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #87:
+  Company: Appian
+  Role: Workplace & Facilities Specialist
+  Location: India
+  Base Salary: 975000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 975000.0
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #88:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #89:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #90:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #91:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #92:
+  Company: Appian
+  Role: Technical Mentor, Software development
+  Location: India
+  Base Salary: 5100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5100000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #93:
+  Company: Appian
+  Role: Product Management
+  Location: India
+  Base Salary: 7500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 7500000
+  Years of Experience: 23
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #94:
+  Company: Appian
+  Role: Solutions Consultant
+  Location: India
+  Base Salary: 900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 900000
+  Years of Experience: 41
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #95:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #96:
+  Company: Appian
+  Role: Solutions Consultant
+  Location: India
+  Base Salary: 900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 900000
+  Years of Experience: 41
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #97:
+  Company: Appian
+  Role: Product manager 2
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 7
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #98:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #99:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #100:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 2900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2900000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #101:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 2100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2100000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #102:
+  Company: Appian
+  Role: Software Engineer II
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #103:
+  Company: Appian
+  Role: Senior Test Automation Engineer II
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #104:
+  Company: Appian
+  Role: Senior Platform Product Manager
+  Location: India
+  Base Salary: 3060000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3060000.0
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #105:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2400000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #106:
+  Company: Appian
+  Role: Lead Software Engineer
+  Location: India
+  Base Salary: 6100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6100000
+  Years of Experience: 18
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #107:
+  Company: Appian
+  Role: Senior Quality Engineer II
+  Location: India
+  Base Salary: 690000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 690000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #108:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5500000
+  Years of Experience: 2
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #109:
+  Company: Appian
+  Role: SSE
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #110:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 3500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #111:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 5000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5000000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #112:
+  Company: Appian
+  Role: Senior Product Manager
+  Location: India
+  Base Salary: 2800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2800000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #113:
+  Company: Appian
+  Role: Software Engineer 2
+  Location: India
+  Base Salary: 3400000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3400000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #114:
+  Company: Appian
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 4500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4500000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+Record #115:
+  Company: Appian
+  Role: Human Resources Manager
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-appian-pay
+
+================================================================================

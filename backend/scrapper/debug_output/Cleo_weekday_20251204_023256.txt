@@ -1,0 +1,3877 @@
+================================================================================
+Company: Cleo
+Source: weekday
+Timestamp: 20251204_023256
+================================================================================
+
+RAW SALARY VALUES (ORIGINAL FORMAT):
+--------------------------------------------------------------------------------
+
+Raw Value #1:
+  Role: backend
+  Salary (raw): 18 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #2:
+  Role: backend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #3:
+  Role: backend
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #4:
+  Role: backend
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #5:
+  Role: backend
+  Salary (raw): 18 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #6:
+  Role: backend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #7:
+  Role: backend
+  Salary (raw): 4.2 (type: float)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #8:
+  Role: backend
+  Salary (raw): 19 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #9:
+  Role: backend
+  Salary (raw): 7 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #10:
+  Role: backend
+  Salary (raw): 12 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #11:
+  Role: backend
+  Salary (raw): 44.5 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #12:
+  Role: backend
+  Salary (raw): 23 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #13:
+  Role: backend
+  Salary (raw): 10 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #14:
+  Role: backend
+  Salary (raw): 25 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #15:
+  Role: backend
+  Salary (raw): 25 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #16:
+  Role: backend
+  Salary (raw): 56 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #17:
+  Role: backend
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #18:
+  Role: frontend
+  Salary (raw): 18 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #19:
+  Role: frontend
+  Salary (raw): 27 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #20:
+  Role: frontend
+  Salary (raw): 19 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #21:
+  Role: frontend
+  Salary (raw): 12 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #22:
+  Role: frontend
+  Salary (raw): 23 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #23:
+  Role: frontend
+  Salary (raw): 32 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #24:
+  Role: frontend
+  Salary (raw): 25 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #25:
+  Role: fullstack
+  Salary (raw): 18 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #26:
+  Role: fullstack
+  Salary (raw): 27 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #27:
+  Role: fullstack
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #28:
+  Role: fullstack
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #29:
+  Role: fullstack
+  Salary (raw): 18 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #30:
+  Role: fullstack
+  Salary (raw): 4.2 (type: float)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #31:
+  Role: fullstack
+  Salary (raw): 19 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #32:
+  Role: fullstack
+  Salary (raw): 7 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #33:
+  Role: fullstack
+  Salary (raw): 12 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #34:
+  Role: fullstack
+  Salary (raw): 12 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #35:
+  Role: fullstack
+  Salary (raw): 44.5 (type: float)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #36:
+  Role: fullstack
+  Salary (raw): 23 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #37:
+  Role: fullstack
+  Salary (raw): 10 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #38:
+  Role: android
+  Salary (raw): 6 (type: int)
+  Years of Experience: 1
+  Location: N/A
+
+Raw Value #39:
+  Role: tech lead
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #40:
+  Role: tech lead
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #41:
+  Role: tech lead
+  Salary (raw): 27 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #42:
+  Role: tech lead
+  Salary (raw): 4.2 (type: float)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #43:
+  Role: tech lead
+  Salary (raw): 34.6 (type: float)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #44:
+  Role: tech lead
+  Salary (raw): 81 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #45:
+  Role: tech lead
+  Salary (raw): 10 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #46:
+  Role: tech lead
+  Salary (raw): 7 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #47:
+  Role: tech lead
+  Salary (raw): 23 (type: int)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #48:
+  Role: tech lead
+  Salary (raw): 20.25 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #49:
+  Role: tech lead
+  Salary (raw): 25 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #50:
+  Role: tech lead
+  Salary (raw): 30 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #51:
+  Role: tech lead
+  Salary (raw): 42.2 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #52:
+  Role: tech lead
+  Salary (raw): 25 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #53:
+  Role: tech lead
+  Salary (raw): 27 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #54:
+  Role: dev-ops
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #55:
+  Role: dev-ops
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #56:
+  Role: dev-ops
+  Salary (raw): 18 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #57:
+  Role: dev-ops
+  Salary (raw): 27 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #58:
+  Role: dev-ops
+  Salary (raw): 4.2 (type: float)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #59:
+  Role: dev-ops
+  Salary (raw): 81 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #60:
+  Role: dev-ops
+  Salary (raw): 10 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #61:
+  Role: dev-ops
+  Salary (raw): 7 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #62:
+  Role: dev-ops
+  Salary (raw): 10 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #63:
+  Role: dev-ops
+  Salary (raw): 20.25 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #64:
+  Role: dev-ops
+  Salary (raw): 25 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #65:
+  Role: dev-ops
+  Salary (raw): 30 (type: int)
+  Years of Experience: 17
+  Location: N/A
+
+Raw Value #66:
+  Role: dev-ops
+  Salary (raw): 25 (type: int)
+  Years of Experience: 11
+  Location: N/A
+
+Raw Value #67:
+  Role: dev-ops
+  Salary (raw): 56 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #68:
+  Role: dev-ops
+  Salary (raw): 42.2 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #69:
+  Role: dev-ops
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #70:
+  Role: dev-ops
+  Salary (raw): 25 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #71:
+  Role: dev-ops
+  Salary (raw): 27 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #72:
+  Role: data engineer
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #73:
+  Role: data engineer
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #74:
+  Role: data engineer
+  Salary (raw): 25 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #75:
+  Role: data science
+  Salary (raw): 27 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #76:
+  Role: data science
+  Salary (raw): 56 (type: int)
+  Years of Experience: 10
+  Location: N/A
+
+Raw Value #77:
+  Role: deep-learning
+  Salary (raw): 12 (type: int)
+  Years of Experience: 4
+  Location: N/A
+
+Raw Value #78:
+  Role: Web3
+  Salary (raw): 12.8 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #79:
+  Role: Web3
+  Salary (raw): 6 (type: int)
+  Years of Experience: 1
+  Location: N/A
+
+Raw Value #80:
+  Role: Web3
+  Salary (raw): 32 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #81:
+  Role: data-infrastructure
+  Salary (raw): 68 (type: int)
+  Years of Experience: 13
+  Location: N/A
+
+Raw Value #82:
+  Role: data-infrastructure
+  Salary (raw): 23 (type: int)
+  Years of Experience: 6
+  Location: N/A
+
+Raw Value #83:
+  Role: data-infrastructure
+  Salary (raw): 19 (type: int)
+  Years of Experience: 14
+  Location: N/A
+
+Raw Value #84:
+  Role: data-infrastructure
+  Salary (raw): 7 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #85:
+  Role: data-infrastructure
+  Salary (raw): 12 (type: int)
+  Years of Experience: 3
+  Location: N/A
+
+Raw Value #86:
+  Role: data-infrastructure
+  Salary (raw): 20.25 (type: float)
+  Years of Experience: 9
+  Location: N/A
+
+Raw Value #87:
+  Role: data-infrastructure
+  Salary (raw): 25 (type: int)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #88:
+  Role: data-infrastructure
+  Salary (raw): 25 (type: int)
+  Years of Experience: 5
+  Location: N/A
+
+FULL RAW JSON DATA:
+--------------------------------------------------------------------------------
+{
+  "raw_data": {
+    "companyId": "cleo",
+    "averageSalaries": [
+      {
+        "yearsOfExperience": 1,
+        "averageSalary": 9
+      },
+      {
+        "yearsOfExperience": 5,
+        "averageSalary": 32.78
+      },
+      {
+        "yearsOfExperience": 10,
+        "averageSalary": 31.68
+      }
+    ],
+    "maxSalary": 81,
+    "minSalary": 4.2,
+    "roles": [
+      {
+        "role": "backend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 5.9
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 33.32
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 31.46
+          }
+        ],
+        "maxSalary": 68,
+        "minSalary": 4.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 5,
+            "salary": 18
+          },
+          {
+            "role": "Senior Software Engineer– I",
+            "yearsOfExperience": 12,
+            "salary": 27
+          },
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Technical Program Associate",
+            "yearsOfExperience": 3,
+            "salary": 18
+          },
+          {
+            "role": "Senior Implementation Engineer 1",
+            "yearsOfExperience": 8,
+            "salary": 27
+          },
+          {
+            "role": "Support Engineer 1",
+            "yearsOfExperience": 4,
+            "salary": 4.2
+          },
+          {
+            "role": "Senior Software Engineer - II, Research and Development",
+            "yearsOfExperience": 14,
+            "salary": 19
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 8,
+            "salary": 7
+          },
+          {
+            "role": "Software Engineer 1",
+            "yearsOfExperience": 3,
+            "salary": 12
+          },
+          {
+            "role": "Senior Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 44.5
+          },
+          {
+            "role": "Senior Support Engineer",
+            "yearsOfExperience": 9,
+            "salary": 23
+          },
+          {
+            "role": "Software Engineer I",
+            "yearsOfExperience": 3,
+            "salary": 10
+          },
+          {
+            "role": "Lead Implementations",
+            "yearsOfExperience": 8,
+            "salary": 25
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 11,
+            "salary": 25
+          },
+          {
+            "role": "Manager, Senior Technical Program Management",
+            "yearsOfExperience": 10,
+            "salary": 56
+          },
+          {
+            "role": "Senior Implementation Engineer - I",
+            "yearsOfExperience": 6,
+            "salary": 23
+          }
+        ]
+      },
+      {
+        "role": "frontend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 22.48
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 21.65
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 22.21
+          }
+        ],
+        "maxSalary": 32,
+        "minSalary": 12,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 5,
+            "salary": 18
+          },
+          {
+            "role": "Senior Software Engineer– I",
+            "yearsOfExperience": 12,
+            "salary": 27
+          },
+          {
+            "role": "Senior Software Engineer - II, Research and Development",
+            "yearsOfExperience": 14,
+            "salary": 19
+          },
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 4,
+            "salary": 12,
+            "bonus": 1
+          },
+          {
+            "role": "Senior Support Engineer",
+            "yearsOfExperience": 9,
+            "salary": 23
+          },
+          {
+            "role": "Product Analyst",
+            "yearsOfExperience": 3,
+            "salary": 32
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 5,
+            "salary": 25
+          }
+        ]
+      },
+      {
+        "role": "fullstack",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 5.03
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 27.33
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 29.51
+          }
+        ],
+        "maxSalary": 68,
+        "minSalary": 4.2,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 5,
+            "salary": 18
+          },
+          {
+            "role": "Senior Software Engineer– I",
+            "yearsOfExperience": 12,
+            "salary": 27
+          },
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Technical Program Associate",
+            "yearsOfExperience": 3,
+            "salary": 18
+          },
+          {
+            "role": "Support Engineer 1",
+            "yearsOfExperience": 4,
+            "salary": 4.2
+          },
+          {
+            "role": "Senior Software Engineer - II, Research and Development",
+            "yearsOfExperience": 14,
+            "salary": 19
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 8,
+            "salary": 7
+          },
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 4,
+            "salary": 12,
+            "bonus": 1
+          },
+          {
+            "role": "Software Engineer 1",
+            "yearsOfExperience": 3,
+            "salary": 12
+          },
+          {
+            "role": "Senior Software Engineer II",
+            "yearsOfExperience": 10,
+            "salary": 44.5
+          },
+          {
+            "role": "Senior Support Engineer",
+            "yearsOfExperience": 9,
+            "salary": 23
+          },
+          {
+            "role": "Software Engineer I",
+            "yearsOfExperience": 3,
+            "salary": 10
+          }
+        ]
+      },
+      {
+        "role": "android",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 6,
+        "minSalary": 6,
+        "individualSalaries": [
+          {
+            "role": "Associate support engineer",
+            "yearsOfExperience": 1,
+            "salary": 6
+          }
+        ]
+      },
+      {
+        "role": "tech lead",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 5.26
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 41.83
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 34.6
+          }
+        ],
+        "maxSalary": 81,
+        "minSalary": 4.2,
+        "individualSalaries": [
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Senior Implementation Engineer 1",
+            "yearsOfExperience": 8,
+            "salary": 27
+          },
+          {
+            "role": "Support Engineer 1",
+            "yearsOfExperience": 4,
+            "salary": 4.2
+          },
+          {
+            "role": "Manager",
+            "yearsOfExperience": 12,
+            "salary": 34.6
+          },
+          {
+            "role": "Senior Manager Product Engineering",
+            "yearsOfExperience": 12,
+            "salary": 81
+          },
+          {
+            "role": "Implementation Engineer 1",
+            "yearsOfExperience": 3,
+            "salary": 10
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 8,
+            "salary": 7
+          },
+          {
+            "role": "Senior Support Engineer",
+            "yearsOfExperience": 9,
+            "salary": 23
+          },
+          {
+            "role": "Senior User Experience Designer",
+            "yearsOfExperience": 9,
+            "salary": 20.25
+          },
+          {
+            "role": "Lead Implementations",
+            "yearsOfExperience": 8,
+            "salary": 25
+          },
+          {
+            "role": "Delivery Manager",
+            "yearsOfExperience": 17,
+            "salary": 30
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 9,
+            "salary": 42.2
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 5,
+            "salary": 25
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "dev-ops",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 6.34
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 39.06
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 36.4
+          }
+        ],
+        "maxSalary": 81,
+        "minSalary": 4.2,
+        "individualSalaries": [
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Technical Program Associate",
+            "yearsOfExperience": 3,
+            "salary": 18
+          },
+          {
+            "role": "Senior Implementation Engineer 1",
+            "yearsOfExperience": 8,
+            "salary": 27
+          },
+          {
+            "role": "Support Engineer 1",
+            "yearsOfExperience": 4,
+            "salary": 4.2
+          },
+          {
+            "role": "Senior Manager Product Engineering",
+            "yearsOfExperience": 12,
+            "salary": 81
+          },
+          {
+            "role": "Implementation Engineer 1",
+            "yearsOfExperience": 3,
+            "salary": 10
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 8,
+            "salary": 7
+          },
+          {
+            "role": "Software Engineer I",
+            "yearsOfExperience": 3,
+            "salary": 10
+          },
+          {
+            "role": "Senior User Experience Designer",
+            "yearsOfExperience": 9,
+            "salary": 20.25
+          },
+          {
+            "role": "Lead Implementations",
+            "yearsOfExperience": 8,
+            "salary": 25
+          },
+          {
+            "role": "Delivery Manager",
+            "yearsOfExperience": 17,
+            "salary": 30
+          },
+          {
+            "role": "Senior Software Engineer",
+            "yearsOfExperience": 11,
+            "salary": 25
+          },
+          {
+            "role": "Manager, Senior Technical Program Management",
+            "yearsOfExperience": 10,
+            "salary": 56
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 9,
+            "salary": 42.2
+          },
+          {
+            "role": "Senior Implementation Engineer - I",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 5,
+            "salary": 25
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 5,
+            "salary": 27
+          }
+        ]
+      },
+      {
+        "role": "data engineer",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 59.75
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 45.52
+          }
+        ],
+        "maxSalary": 68,
+        "minSalary": 23,
+        "individualSalaries": [
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Lead Implementations",
+            "yearsOfExperience": 8,
+            "salary": 25
+          }
+        ]
+      },
+      {
+        "role": "data science",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 99.5
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 56
+          }
+        ],
+        "maxSalary": 56,
+        "minSalary": 27,
+        "individualSalaries": [
+          {
+            "role": "Senior Implementation Engineer 1",
+            "yearsOfExperience": 8,
+            "salary": 27
+          },
+          {
+            "role": "Manager, Senior Technical Program Management",
+            "yearsOfExperience": 10,
+            "salary": 56
+          }
+        ]
+      },
+      {
+        "role": "deep-learning",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 12,
+        "minSalary": 12,
+        "individualSalaries": [
+          {
+            "role": "Software Engineer",
+            "yearsOfExperience": 4,
+            "salary": 12,
+            "bonus": 1
+          }
+        ]
+      },
+      {
+        "role": "Web3",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 17.2
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 15.83
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 16.48
+          }
+        ],
+        "maxSalary": 32,
+        "minSalary": 6,
+        "individualSalaries": [
+          {
+            "role": "Senior Test engineer I",
+            "yearsOfExperience": 9,
+            "salary": 12.8
+          },
+          {
+            "role": "Associate support engineer",
+            "yearsOfExperience": 1,
+            "salary": 6
+          },
+          {
+            "role": "Product Analyst",
+            "yearsOfExperience": 3,
+            "salary": 32
+          }
+        ]
+      },
+      {
+        "role": "data-infrastructure",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 7.14
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 30.43
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 29.19
+          }
+        ],
+        "maxSalary": 68,
+        "minSalary": 7,
+        "individualSalaries": [
+          {
+            "role": "Principal Software Engineer 1",
+            "yearsOfExperience": 13,
+            "salary": 68,
+            "bonus": 5
+          },
+          {
+            "role": "Software Development Engineer - 2",
+            "yearsOfExperience": 6,
+            "salary": 23
+          },
+          {
+            "role": "Senior Software Engineer - II, Research and Development",
+            "yearsOfExperience": 14,
+            "salary": 19
+          },
+          {
+            "role": "Implementation Engineer II",
+            "yearsOfExperience": 8,
+            "salary": 7
+          },
+          {
+            "role": "Software Engineer 1",
+            "yearsOfExperience": 3,
+            "salary": 12
+          },
+          {
+            "role": "Senior User Experience Designer",
+            "yearsOfExperience": 9,
+            "salary": 20.25
+          },
+          {
+            "role": "Lead Implementations",
+            "yearsOfExperience": 8,
+            "salary": 25
+          },
+          {
+            "role": "Senior Implementation Engineer",
+            "yearsOfExperience": 5,
+            "salary": 25
+          }
+        ]
+      }
+    ]
+  },
+  "roles": [
+    {
+      "role": "backend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 5.9
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 33.32
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 31.46
+        }
+      ],
+      "maxSalary": 68,
+      "minSalary": 4.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 5,
+          "salary": 18
+        },
+        {
+          "role": "Senior Software Engineer– I",
+          "yearsOfExperience": 12,
+          "salary": 27
+        },
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Technical Program Associate",
+          "yearsOfExperience": 3,
+          "salary": 18
+        },
+        {
+          "role": "Senior Implementation Engineer 1",
+          "yearsOfExperience": 8,
+          "salary": 27
+        },
+        {
+          "role": "Support Engineer 1",
+          "yearsOfExperience": 4,
+          "salary": 4.2
+        },
+        {
+          "role": "Senior Software Engineer - II, Research and Development",
+          "yearsOfExperience": 14,
+          "salary": 19
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 8,
+          "salary": 7
+        },
+        {
+          "role": "Software Engineer 1",
+          "yearsOfExperience": 3,
+          "salary": 12
+        },
+        {
+          "role": "Senior Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 44.5
+        },
+        {
+          "role": "Senior Support Engineer",
+          "yearsOfExperience": 9,
+          "salary": 23
+        },
+        {
+          "role": "Software Engineer I",
+          "yearsOfExperience": 3,
+          "salary": 10
+        },
+        {
+          "role": "Lead Implementations",
+          "yearsOfExperience": 8,
+          "salary": 25
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 11,
+          "salary": 25
+        },
+        {
+          "role": "Manager, Senior Technical Program Management",
+          "yearsOfExperience": 10,
+          "salary": 56
+        },
+        {
+          "role": "Senior Implementation Engineer - I",
+          "yearsOfExperience": 6,
+          "salary": 23
+        }
+      ]
+    },
+    {
+      "role": "frontend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 22.48
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 21.65
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 22.21
+        }
+      ],
+      "maxSalary": 32,
+      "minSalary": 12,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 5,
+          "salary": 18
+        },
+        {
+          "role": "Senior Software Engineer– I",
+          "yearsOfExperience": 12,
+          "salary": 27
+        },
+        {
+          "role": "Senior Software Engineer - II, Research and Development",
+          "yearsOfExperience": 14,
+          "salary": 19
+        },
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 4,
+          "salary": 12,
+          "bonus": 1
+        },
+        {
+          "role": "Senior Support Engineer",
+          "yearsOfExperience": 9,
+          "salary": 23
+        },
+        {
+          "role": "Product Analyst",
+          "yearsOfExperience": 3,
+          "salary": 32
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 5,
+          "salary": 25
+        }
+      ]
+    },
+    {
+      "role": "fullstack",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 5.03
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 27.33
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 29.51
+        }
+      ],
+      "maxSalary": 68,
+      "minSalary": 4.2,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 5,
+          "salary": 18
+        },
+        {
+          "role": "Senior Software Engineer– I",
+          "yearsOfExperience": 12,
+          "salary": 27
+        },
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Technical Program Associate",
+          "yearsOfExperience": 3,
+          "salary": 18
+        },
+        {
+          "role": "Support Engineer 1",
+          "yearsOfExperience": 4,
+          "salary": 4.2
+        },
+        {
+          "role": "Senior Software Engineer - II, Research and Development",
+          "yearsOfExperience": 14,
+          "salary": 19
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 8,
+          "salary": 7
+        },
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 4,
+          "salary": 12,
+          "bonus": 1
+        },
+        {
+          "role": "Software Engineer 1",
+          "yearsOfExperience": 3,
+          "salary": 12
+        },
+        {
+          "role": "Senior Software Engineer II",
+          "yearsOfExperience": 10,
+          "salary": 44.5
+        },
+        {
+          "role": "Senior Support Engineer",
+          "yearsOfExperience": 9,
+          "salary": 23
+        },
+        {
+          "role": "Software Engineer I",
+          "yearsOfExperience": 3,
+          "salary": 10
+        }
+      ]
+    },
+    {
+      "role": "android",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 6,
+      "minSalary": 6,
+      "individualSalaries": [
+        {
+          "role": "Associate support engineer",
+          "yearsOfExperience": 1,
+          "salary": 6
+        }
+      ]
+    },
+    {
+      "role": "tech lead",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 5.26
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 41.83
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 34.6
+        }
+      ],
+      "maxSalary": 81,
+      "minSalary": 4.2,
+      "individualSalaries": [
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Senior Implementation Engineer 1",
+          "yearsOfExperience": 8,
+          "salary": 27
+        },
+        {
+          "role": "Support Engineer 1",
+          "yearsOfExperience": 4,
+          "salary": 4.2
+        },
+        {
+          "role": "Manager",
+          "yearsOfExperience": 12,
+          "salary": 34.6
+        },
+        {
+          "role": "Senior Manager Product Engineering",
+          "yearsOfExperience": 12,
+          "salary": 81
+        },
+        {
+          "role": "Implementation Engineer 1",
+          "yearsOfExperience": 3,
+          "salary": 10
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 8,
+          "salary": 7
+        },
+        {
+          "role": "Senior Support Engineer",
+          "yearsOfExperience": 9,
+          "salary": 23
+        },
+        {
+          "role": "Senior User Experience Designer",
+          "yearsOfExperience": 9,
+          "salary": 20.25
+        },
+        {
+          "role": "Lead Implementations",
+          "yearsOfExperience": 8,
+          "salary": 25
+        },
+        {
+          "role": "Delivery Manager",
+          "yearsOfExperience": 17,
+          "salary": 30
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 9,
+          "salary": 42.2
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 5,
+          "salary": 25
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "dev-ops",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 6.34
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 39.06
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 36.4
+        }
+      ],
+      "maxSalary": 81,
+      "minSalary": 4.2,
+      "individualSalaries": [
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Technical Program Associate",
+          "yearsOfExperience": 3,
+          "salary": 18
+        },
+        {
+          "role": "Senior Implementation Engineer 1",
+          "yearsOfExperience": 8,
+          "salary": 27
+        },
+        {
+          "role": "Support Engineer 1",
+          "yearsOfExperience": 4,
+          "salary": 4.2
+        },
+        {
+          "role": "Senior Manager Product Engineering",
+          "yearsOfExperience": 12,
+          "salary": 81
+        },
+        {
+          "role": "Implementation Engineer 1",
+          "yearsOfExperience": 3,
+          "salary": 10
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 8,
+          "salary": 7
+        },
+        {
+          "role": "Software Engineer I",
+          "yearsOfExperience": 3,
+          "salary": 10
+        },
+        {
+          "role": "Senior User Experience Designer",
+          "yearsOfExperience": 9,
+          "salary": 20.25
+        },
+        {
+          "role": "Lead Implementations",
+          "yearsOfExperience": 8,
+          "salary": 25
+        },
+        {
+          "role": "Delivery Manager",
+          "yearsOfExperience": 17,
+          "salary": 30
+        },
+        {
+          "role": "Senior Software Engineer",
+          "yearsOfExperience": 11,
+          "salary": 25
+        },
+        {
+          "role": "Manager, Senior Technical Program Management",
+          "yearsOfExperience": 10,
+          "salary": 56
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 9,
+          "salary": 42.2
+        },
+        {
+          "role": "Senior Implementation Engineer - I",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 5,
+          "salary": 25
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 5,
+          "salary": 27
+        }
+      ]
+    },
+    {
+      "role": "data engineer",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 59.75
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 45.52
+        }
+      ],
+      "maxSalary": 68,
+      "minSalary": 23,
+      "individualSalaries": [
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Lead Implementations",
+          "yearsOfExperience": 8,
+          "salary": 25
+        }
+      ]
+    },
+    {
+      "role": "data science",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 99.5
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 56
+        }
+      ],
+      "maxSalary": 56,
+      "minSalary": 27,
+      "individualSalaries": [
+        {
+          "role": "Senior Implementation Engineer 1",
+          "yearsOfExperience": 8,
+          "salary": 27
+        },
+        {
+          "role": "Manager, Senior Technical Program Management",
+          "yearsOfExperience": 10,
+          "salary": 56
+        }
+      ]
+    },
+    {
+      "role": "deep-learning",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 12,
+      "minSalary": 12,
+      "individualSalaries": [
+        {
+          "role": "Software Engineer",
+          "yearsOfExperience": 4,
+          "salary": 12,
+          "bonus": 1
+        }
+      ]
+    },
+    {
+      "role": "Web3",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 17.2
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 15.83
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 16.48
+        }
+      ],
+      "maxSalary": 32,
+      "minSalary": 6,
+      "individualSalaries": [
+        {
+          "role": "Senior Test engineer I",
+          "yearsOfExperience": 9,
+          "salary": 12.8
+        },
+        {
+          "role": "Associate support engineer",
+          "yearsOfExperience": 1,
+          "salary": 6
+        },
+        {
+          "role": "Product Analyst",
+          "yearsOfExperience": 3,
+          "salary": 32
+        }
+      ]
+    },
+    {
+      "role": "data-infrastructure",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 7.14
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 30.43
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 29.19
+        }
+      ],
+      "maxSalary": 68,
+      "minSalary": 7,
+      "individualSalaries": [
+        {
+          "role": "Principal Software Engineer 1",
+          "yearsOfExperience": 13,
+          "salary": 68,
+          "bonus": 5
+        },
+        {
+          "role": "Software Development Engineer - 2",
+          "yearsOfExperience": 6,
+          "salary": 23
+        },
+        {
+          "role": "Senior Software Engineer - II, Research and Development",
+          "yearsOfExperience": 14,
+          "salary": 19
+        },
+        {
+          "role": "Implementation Engineer II",
+          "yearsOfExperience": 8,
+          "salary": 7
+        },
+        {
+          "role": "Software Engineer 1",
+          "yearsOfExperience": 3,
+          "salary": 12
+        },
+        {
+          "role": "Senior User Experience Designer",
+          "yearsOfExperience": 9,
+          "salary": 20.25
+        },
+        {
+          "role": "Lead Implementations",
+          "yearsOfExperience": 8,
+          "salary": 25
+        },
+        {
+          "role": "Senior Implementation Engineer",
+          "yearsOfExperience": 5,
+          "salary": 25
+        }
+      ]
+    }
+  ],
+  "raw_salary_values": [
+    {
+      "role": "backend",
+      "salary": 18,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 5,
+        "salary": 18
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 27,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer– I",
+        "yearsOfExperience": 12,
+        "salary": 27
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 18,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Technical Program Associate",
+        "yearsOfExperience": 3,
+        "salary": 18
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 27,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Implementation Engineer 1",
+        "yearsOfExperience": 8,
+        "salary": 27
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 4.2,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Support Engineer 1",
+        "yearsOfExperience": 4,
+        "salary": 4.2
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 19,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer - II, Research and Development",
+        "yearsOfExperience": 14,
+        "salary": 19
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 7,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 8,
+        "salary": 7
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 12,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer 1",
+        "yearsOfExperience": 3,
+        "salary": 12
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 44.5,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 44.5
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 23,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Support Engineer",
+        "yearsOfExperience": 9,
+        "salary": 23
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 10,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer I",
+        "yearsOfExperience": 3,
+        "salary": 10
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 25,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Lead Implementations",
+        "yearsOfExperience": 8,
+        "salary": 25
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 25,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 11,
+        "salary": 25
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 56,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Manager, Senior Technical Program Management",
+        "yearsOfExperience": 10,
+        "salary": 56
+      }
+    },
+    {
+      "role": "backend",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Senior Implementation Engineer - I",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 18,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 5,
+        "salary": 18
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 27,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer– I",
+        "yearsOfExperience": 12,
+        "salary": 27
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 19,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer - II, Research and Development",
+        "yearsOfExperience": 14,
+        "salary": 19
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 12,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 4,
+        "salary": 12,
+        "bonus": 1
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 23,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Support Engineer",
+        "yearsOfExperience": 9,
+        "salary": 23
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 32,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Product Analyst",
+        "yearsOfExperience": 3,
+        "salary": 32
+      }
+    },
+    {
+      "role": "frontend",
+      "salary": 25,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 5,
+        "salary": 25
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 18,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 5,
+        "salary": 18
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 27,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Software Engineer– I",
+        "yearsOfExperience": 12,
+        "salary": 27
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 18,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Technical Program Associate",
+        "yearsOfExperience": 3,
+        "salary": 18
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 4.2,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Support Engineer 1",
+        "yearsOfExperience": 4,
+        "salary": 4.2
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 19,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer - II, Research and Development",
+        "yearsOfExperience": 14,
+        "salary": 19
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 7,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 8,
+        "salary": 7
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 12,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 4,
+        "salary": 12,
+        "bonus": 1
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 12,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer 1",
+        "yearsOfExperience": 3,
+        "salary": 12
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 44.5,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Senior Software Engineer II",
+        "yearsOfExperience": 10,
+        "salary": 44.5
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 23,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Support Engineer",
+        "yearsOfExperience": 9,
+        "salary": 23
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 10,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer I",
+        "yearsOfExperience": 3,
+        "salary": 10
+      }
+    },
+    {
+      "role": "android",
+      "salary": 6,
+      "yearsOfExperience": 1,
+      "full_record": {
+        "role": "Associate support engineer",
+        "yearsOfExperience": 1,
+        "salary": 6
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 27,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Implementation Engineer 1",
+        "yearsOfExperience": 8,
+        "salary": 27
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 4.2,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Support Engineer 1",
+        "yearsOfExperience": 4,
+        "salary": 4.2
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 34.6,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Manager",
+        "yearsOfExperience": 12,
+        "salary": 34.6
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 81,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Manager Product Engineering",
+        "yearsOfExperience": 12,
+        "salary": 81
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 10,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Implementation Engineer 1",
+        "yearsOfExperience": 3,
+        "salary": 10
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 7,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 8,
+        "salary": 7
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 23,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Support Engineer",
+        "yearsOfExperience": 9,
+        "salary": 23
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 20.25,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior User Experience Designer",
+        "yearsOfExperience": 9,
+        "salary": 20.25
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 25,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Lead Implementations",
+        "yearsOfExperience": 8,
+        "salary": 25
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 30,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Delivery Manager",
+        "yearsOfExperience": 17,
+        "salary": 30
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 42.2,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 9,
+        "salary": 42.2
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 25,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 5,
+        "salary": 25
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 27,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 27
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 18,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Technical Program Associate",
+        "yearsOfExperience": 3,
+        "salary": 18
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 27,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Implementation Engineer 1",
+        "yearsOfExperience": 8,
+        "salary": 27
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 4.2,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Support Engineer 1",
+        "yearsOfExperience": 4,
+        "salary": 4.2
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 81,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Senior Manager Product Engineering",
+        "yearsOfExperience": 12,
+        "salary": 81
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 10,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Implementation Engineer 1",
+        "yearsOfExperience": 3,
+        "salary": 10
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 7,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 8,
+        "salary": 7
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 10,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer I",
+        "yearsOfExperience": 3,
+        "salary": 10
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 20.25,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior User Experience Designer",
+        "yearsOfExperience": 9,
+        "salary": 20.25
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 25,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Lead Implementations",
+        "yearsOfExperience": 8,
+        "salary": 25
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 30,
+      "yearsOfExperience": 17,
+      "full_record": {
+        "role": "Delivery Manager",
+        "yearsOfExperience": 17,
+        "salary": 30
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 25,
+      "yearsOfExperience": 11,
+      "full_record": {
+        "role": "Senior Software Engineer",
+        "yearsOfExperience": 11,
+        "salary": 25
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 56,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Manager, Senior Technical Program Management",
+        "yearsOfExperience": 10,
+        "salary": 56
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 42.2,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 9,
+        "salary": 42.2
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Senior Implementation Engineer - I",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 25,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 5,
+        "salary": 25
+      }
+    },
+    {
+      "role": "dev-ops",
+      "salary": 27,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 5,
+        "salary": 27
+      }
+    },
+    {
+      "role": "data engineer",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "data engineer",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "data engineer",
+      "salary": 25,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Lead Implementations",
+        "yearsOfExperience": 8,
+        "salary": 25
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 27,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Implementation Engineer 1",
+        "yearsOfExperience": 8,
+        "salary": 27
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 56,
+      "yearsOfExperience": 10,
+      "full_record": {
+        "role": "Manager, Senior Technical Program Management",
+        "yearsOfExperience": 10,
+        "salary": 56
+      }
+    },
+    {
+      "role": "deep-learning",
+      "salary": 12,
+      "yearsOfExperience": 4,
+      "full_record": {
+        "role": "Software Engineer",
+        "yearsOfExperience": 4,
+        "salary": 12,
+        "bonus": 1
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 12.8,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior Test engineer I",
+        "yearsOfExperience": 9,
+        "salary": 12.8
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 6,
+      "yearsOfExperience": 1,
+      "full_record": {
+        "role": "Associate support engineer",
+        "yearsOfExperience": 1,
+        "salary": 6
+      }
+    },
+    {
+      "role": "Web3",
+      "salary": 32,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Product Analyst",
+        "yearsOfExperience": 3,
+        "salary": 32
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 68,
+      "yearsOfExperience": 13,
+      "full_record": {
+        "role": "Principal Software Engineer 1",
+        "yearsOfExperience": 13,
+        "salary": 68,
+        "bonus": 5
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 23,
+      "yearsOfExperience": 6,
+      "full_record": {
+        "role": "Software Development Engineer - 2",
+        "yearsOfExperience": 6,
+        "salary": 23
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 19,
+      "yearsOfExperience": 14,
+      "full_record": {
+        "role": "Senior Software Engineer - II, Research and Development",
+        "yearsOfExperience": 14,
+        "salary": 19
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 7,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Implementation Engineer II",
+        "yearsOfExperience": 8,
+        "salary": 7
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 12,
+      "yearsOfExperience": 3,
+      "full_record": {
+        "role": "Software Engineer 1",
+        "yearsOfExperience": 3,
+        "salary": 12
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 20.25,
+      "yearsOfExperience": 9,
+      "full_record": {
+        "role": "Senior User Experience Designer",
+        "yearsOfExperience": 9,
+        "salary": 20.25
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 25,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Lead Implementations",
+        "yearsOfExperience": 8,
+        "salary": 25
+      }
+    },
+    {
+      "role": "data-infrastructure",
+      "salary": 25,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Senior Implementation Engineer",
+        "yearsOfExperience": 5,
+        "salary": 25
+      }
+    }
+  ],
+  "url": "https://www.weekday.works/salary/what-salary-does-cleo-pay"
+}
+
+PROCESSED SALARY RECORDS:
+--------------------------------------------------------------------------------
+
+Record #1:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #2:
+  Company: Cleo
+  Role: Senior Software Engineer– I
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #3:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #4:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #5:
+  Company: Cleo
+  Role: Technical Program Associate
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #6:
+  Company: Cleo
+  Role: Senior Implementation Engineer 1
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #7:
+  Company: Cleo
+  Role: Support Engineer 1
+  Location: India
+  Base Salary: 420000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 420000.0
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #8:
+  Company: Cleo
+  Role: Senior Software Engineer - II, Research and Development
+  Location: India
+  Base Salary: 1900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1900000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #9:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #10:
+  Company: Cleo
+  Role: Software Engineer 1
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #11:
+  Company: Cleo
+  Role: Senior Software Engineer II
+  Location: India
+  Base Salary: 4450000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4450000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #12:
+  Company: Cleo
+  Role: Senior Support Engineer
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #13:
+  Company: Cleo
+  Role: Software Engineer I
+  Location: India
+  Base Salary: 1000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1000000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #14:
+  Company: Cleo
+  Role: Lead Implementations
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #15:
+  Company: Cleo
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #16:
+  Company: Cleo
+  Role: Manager, Senior Technical Program Management
+  Location: India
+  Base Salary: 5600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5600000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #17:
+  Company: Cleo
+  Role: Senior Implementation Engineer - I
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #18:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #19:
+  Company: Cleo
+  Role: Senior Software Engineer– I
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #20:
+  Company: Cleo
+  Role: Senior Software Engineer - II, Research and Development
+  Location: India
+  Base Salary: 1900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1900000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #21:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #22:
+  Company: Cleo
+  Role: Senior Support Engineer
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #23:
+  Company: Cleo
+  Role: Product Analyst
+  Location: India
+  Base Salary: 3200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3200000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #24:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #25:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #26:
+  Company: Cleo
+  Role: Senior Software Engineer– I
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #27:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #28:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #29:
+  Company: Cleo
+  Role: Technical Program Associate
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #30:
+  Company: Cleo
+  Role: Support Engineer 1
+  Location: India
+  Base Salary: 420000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 420000.0
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #31:
+  Company: Cleo
+  Role: Senior Software Engineer - II, Research and Development
+  Location: India
+  Base Salary: 1900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1900000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #32:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #33:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #34:
+  Company: Cleo
+  Role: Software Engineer 1
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #35:
+  Company: Cleo
+  Role: Senior Software Engineer II
+  Location: India
+  Base Salary: 4450000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4450000.0
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #36:
+  Company: Cleo
+  Role: Senior Support Engineer
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #37:
+  Company: Cleo
+  Role: Software Engineer I
+  Location: India
+  Base Salary: 1000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1000000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #38:
+  Company: Cleo
+  Role: Associate support engineer
+  Location: India
+  Base Salary: 600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 600000
+  Years of Experience: 1
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #39:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #40:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #41:
+  Company: Cleo
+  Role: Senior Implementation Engineer 1
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #42:
+  Company: Cleo
+  Role: Support Engineer 1
+  Location: India
+  Base Salary: 420000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 420000.0
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #43:
+  Company: Cleo
+  Role: Manager
+  Location: India
+  Base Salary: 3460000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3460000.0
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #44:
+  Company: Cleo
+  Role: Senior Manager Product Engineering
+  Location: India
+  Base Salary: 8100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 8100000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #45:
+  Company: Cleo
+  Role: Implementation Engineer 1
+  Location: India
+  Base Salary: 1000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1000000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #46:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #47:
+  Company: Cleo
+  Role: Senior Support Engineer
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #48:
+  Company: Cleo
+  Role: Senior User Experience Designer
+  Location: India
+  Base Salary: 2025000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2025000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #49:
+  Company: Cleo
+  Role: Lead Implementations
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #50:
+  Company: Cleo
+  Role: Delivery Manager
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #51:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 4220000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4220000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #52:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #53:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #54:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #55:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #56:
+  Company: Cleo
+  Role: Technical Program Associate
+  Location: India
+  Base Salary: 1800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1800000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #57:
+  Company: Cleo
+  Role: Senior Implementation Engineer 1
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #58:
+  Company: Cleo
+  Role: Support Engineer 1
+  Location: India
+  Base Salary: 420000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 420000.0
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #59:
+  Company: Cleo
+  Role: Senior Manager Product Engineering
+  Location: India
+  Base Salary: 8100000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 8100000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #60:
+  Company: Cleo
+  Role: Implementation Engineer 1
+  Location: India
+  Base Salary: 1000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1000000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #61:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #62:
+  Company: Cleo
+  Role: Software Engineer I
+  Location: India
+  Base Salary: 1000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1000000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #63:
+  Company: Cleo
+  Role: Senior User Experience Designer
+  Location: India
+  Base Salary: 2025000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2025000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #64:
+  Company: Cleo
+  Role: Lead Implementations
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #65:
+  Company: Cleo
+  Role: Delivery Manager
+  Location: India
+  Base Salary: 3000000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3000000
+  Years of Experience: 17
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #66:
+  Company: Cleo
+  Role: Senior Software Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 11
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #67:
+  Company: Cleo
+  Role: Manager, Senior Technical Program Management
+  Location: India
+  Base Salary: 5600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5600000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #68:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 4220000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4220000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #69:
+  Company: Cleo
+  Role: Senior Implementation Engineer - I
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #70:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #71:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #72:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #73:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #74:
+  Company: Cleo
+  Role: Lead Implementations
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #75:
+  Company: Cleo
+  Role: Senior Implementation Engineer 1
+  Location: India
+  Base Salary: 2700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #76:
+  Company: Cleo
+  Role: Manager, Senior Technical Program Management
+  Location: India
+  Base Salary: 5600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 5600000
+  Years of Experience: 10
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #77:
+  Company: Cleo
+  Role: Software Engineer
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 4
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #78:
+  Company: Cleo
+  Role: Senior Test engineer I
+  Location: India
+  Base Salary: 1280000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1280000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #79:
+  Company: Cleo
+  Role: Associate support engineer
+  Location: India
+  Base Salary: 600000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 600000
+  Years of Experience: 1
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #80:
+  Company: Cleo
+  Role: Product Analyst
+  Location: India
+  Base Salary: 3200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 3200000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #81:
+  Company: Cleo
+  Role: Principal Software Engineer 1
+  Location: India
+  Base Salary: 6800000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 6800000
+  Years of Experience: 13
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #82:
+  Company: Cleo
+  Role: Software Development Engineer - 2
+  Location: India
+  Base Salary: 2300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2300000
+  Years of Experience: 6
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #83:
+  Company: Cleo
+  Role: Senior Software Engineer - II, Research and Development
+  Location: India
+  Base Salary: 1900000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1900000
+  Years of Experience: 14
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #84:
+  Company: Cleo
+  Role: Implementation Engineer II
+  Location: India
+  Base Salary: 700000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 700000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #85:
+  Company: Cleo
+  Role: Software Engineer 1
+  Location: India
+  Base Salary: 1200000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1200000
+  Years of Experience: 3
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #86:
+  Company: Cleo
+  Role: Senior User Experience Designer
+  Location: India
+  Base Salary: 2025000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2025000.0
+  Years of Experience: 9
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #87:
+  Company: Cleo
+  Role: Lead Implementations
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+Record #88:
+  Company: Cleo
+  Role: Senior Implementation Engineer
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cleo-pay
+
+================================================================================

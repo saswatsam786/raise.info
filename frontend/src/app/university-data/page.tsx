@@ -6,8 +6,10 @@ import "rc-slider/assets/index.css";
 import SalaryDetailsPanel from "@/components/SalaryDetailsPanel";
 import AddSalaryModal from "@/components/AddSalaryModal";
 import { supabase } from "@/lib/supabase/config";
+import universitySeedData from "@/data/university_data.json";
 
 interface UniversityData {
+  id?: string;
   university: string;
   company: string;
   role: string;
@@ -35,201 +37,8 @@ type SortField = keyof UniversityData;
 type SortDirection = "asc" | "desc";
 
 export default function UniversityDataPage() {
-  // Sample university data
-  const universityData: UniversityData[] = [
-    {
-      university: "Stanford University",
-      company: "Google",
-      role: "Software Engineer",
-      employment_type: "Full-time",
-      salary_min: 120000,
-      salary_max: 180000,
-      salary_avg: 150000,
-      reports: 45,
-      year: 2024,
-      location: "Mountain View, CA",
-    },
-    {
-      university: "Stanford University",
-      company: "Google",
-      role: "Software Engineering Intern",
-      employment_type: "Internship",
-      salary_min: 6000,
-      salary_max: 8000,
-      salary_avg: 7000,
-      reports: 38,
-      year: 2024,
-      location: "Mountain View, CA",
-    },
-    {
-      university: "UC Berkeley",
-      company: "Microsoft",
-      role: "Product Manager",
-      employment_type: "Full-time",
-      salary_min: 110000,
-      salary_max: 160000,
-      salary_avg: 135000,
-      reports: 32,
-      year: 2024,
-      location: "Seattle, WA",
-    },
-    {
-      university: "UC Berkeley",
-      company: "Microsoft",
-      role: "Product Management Intern",
-      employment_type: "Internship",
-      salary_min: 5500,
-      salary_max: 7500,
-      salary_avg: 6500,
-      reports: 28,
-      year: 2024,
-      location: "Seattle, WA",
-    },
-    {
-      university: "MIT",
-      company: "Amazon",
-      role: "Data Scientist",
-      employment_type: "Full-time",
-      salary_min: 130000,
-      salary_max: 190000,
-      salary_avg: 160000,
-      reports: 28,
-      year: 2024,
-      location: "Seattle, WA",
-    },
-    {
-      university: "MIT",
-      company: "Amazon",
-      role: "Data Science Intern",
-      employment_type: "Internship",
-      salary_min: 5000,
-      salary_max: 7000,
-      salary_avg: 6000,
-      reports: 24,
-      year: 2024,
-      location: "Seattle, WA",
-    },
-    {
-      university: "Carnegie Mellon",
-      company: "Meta",
-      role: "Frontend Engineer",
-      employment_type: "Full-time",
-      salary_min: 115000,
-      salary_max: 170000,
-      salary_avg: 142500,
-      reports: 41,
-      year: 2024,
-      location: "Menlo Park, CA",
-    },
-    {
-      university: "Carnegie Mellon",
-      company: "Meta",
-      role: "Frontend Development Intern",
-      employment_type: "Internship",
-      salary_min: 5800,
-      salary_max: 7800,
-      salary_avg: 6800,
-      reports: 35,
-      year: 2024,
-      location: "Menlo Park, CA",
-    },
-    {
-      university: "Stanford University",
-      company: "Apple",
-      role: "iOS Engineer",
-      employment_type: "Full-time",
-      salary_min: 125000,
-      salary_max: 185000,
-      salary_avg: 155000,
-      reports: 35,
-      year: 2024,
-      location: "Cupertino, CA",
-    },
-    {
-      university: "Stanford University",
-      company: "Apple",
-      role: "iOS Development Intern",
-      employment_type: "Internship",
-      salary_min: 6200,
-      salary_max: 8200,
-      salary_avg: 7200,
-      reports: 29,
-      year: 2024,
-      location: "Cupertino, CA",
-    },
-    {
-      university: "UC Berkeley",
-      company: "Netflix",
-      role: "Backend Engineer",
-      employment_type: "Full-time",
-      salary_min: 120000,
-      salary_max: 180000,
-      salary_avg: 150000,
-      reports: 22,
-      year: 2024,
-      location: "Los Gatos, CA",
-    },
-    {
-      university: "UC Berkeley",
-      company: "Netflix",
-      role: "Backend Engineering Intern",
-      employment_type: "Internship",
-      salary_min: 5500,
-      salary_max: 7500,
-      salary_avg: 6500,
-      reports: 18,
-      year: 2024,
-      location: "Los Gatos, CA",
-    },
-    {
-      university: "MIT",
-      company: "Uber",
-      role: "Machine Learning Engineer",
-      employment_type: "Full-time",
-      salary_min: 135000,
-      salary_max: 195000,
-      salary_avg: 165000,
-      reports: 19,
-      year: 2024,
-      location: "San Francisco, CA",
-    },
-    {
-      university: "MIT",
-      company: "Uber",
-      role: "Machine Learning Intern",
-      employment_type: "Internship",
-      salary_min: 5200,
-      salary_max: 7200,
-      salary_avg: 6200,
-      reports: 15,
-      year: 2024,
-      location: "San Francisco, CA",
-    },
-    {
-      university: "Stanford University",
-      company: "Airbnb",
-      role: "UX Designer",
-      employment_type: "Full-time",
-      salary_min: 100000,
-      salary_max: 150000,
-      salary_avg: 125000,
-      reports: 15,
-      year: 2024,
-      location: "San Francisco, CA",
-    },
-    {
-      university: "Stanford University",
-      company: "Airbnb",
-      role: "UX Design Intern",
-      employment_type: "Internship",
-      salary_min: 4800,
-      salary_max: 6800,
-      salary_avg: 5800,
-      reports: 12,
-      year: 2024,
-      location: "San Francisco, CA",
-    },
-  ];
+  // Sample university data from JSON
+  const universityData = universitySeedData as UniversityData[];
 
   // University rows loaded from Supabase (user submissions)
   const [supabaseUniversityData, setSupabaseUniversityData] = useState<
@@ -242,7 +51,7 @@ export default function UniversityDataPage() {
       const { data, error } = await supabase
         .from("salaries")
         .select(
-          "company_name, designation, location, total_compensation, data_points_count, avg_salary, job_type, additional_data"
+          "id, company_name, designation, location, total_compensation, data_points_count, avg_salary, job_type, additional_data, upvotes, downvotes"
         );
 
       if (error) throw error;
@@ -250,6 +59,7 @@ export default function UniversityDataPage() {
       const transformed: UniversityData[] = (data || [])
         .map(
           (item: {
+            id: string;
             company_name: string;
             designation: string;
             location: string;
@@ -262,7 +72,9 @@ export default function UniversityDataPage() {
               year?: string | null;
               employment_type?: "Full-time" | "Internship" | null;
             } | null;
-          }) => {
+            upvotes?: number | null;
+            downvotes?: number | null;
+          }): UniversityData | null => {
             const universityName = item.additional_data?.university;
             if (!universityName) return null;
 
@@ -277,14 +89,15 @@ export default function UniversityDataPage() {
               new Date().getFullYear().toString();
 
             return {
+              id: item.id,
               university: universityName,
               company: item.company_name,
               role: item.designation,
-              employment_type: employmentType,
+              employment_type: employmentType as "Full-time" | "Internship",
               salary_min: avg,
               salary_max: avg,
               salary_avg: avg,
-              reports: item.data_points_count ?? 1,
+              reports: (item.data_points_count ?? 1) + ((item.upvotes || 0) - (item.downvotes || 0)),
               year: Number(year),
               location: item.location,
             };
@@ -306,7 +119,7 @@ export default function UniversityDataPage() {
 
   const allUniversityData = useMemo(
     () => [...supabaseUniversityData, ...universityData],
-    [supabaseUniversityData]
+    [supabaseUniversityData, universityData]
   );
 
   // Calculate salary range from data
@@ -771,9 +584,9 @@ export default function UniversityDataPage() {
       {/* Results Table */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Table and Side Panel Container */}
-        <div className={`flex gap-4 transition-all duration-500 ease-in-out min-h-[600px] ${isSidePanelOpen ? '' : ''}`}>
+        <div className={`flex gap-4 transition-all duration-500 ease-in-out items-stretch ${isSidePanelOpen ? '' : ''}`}>
           {/* Table Section - 70% when panel is open, 100% when closed */}
-          <div className={`transition-all duration-500 ease-in-out ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
+          <div className={`transition-all duration-500 ease-in-out flex flex-col ${isSidePanelOpen ? 'w-[70%]' : 'w-full'}`}>
             {isLoading ? (
               <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-600 mx-auto"></div>
@@ -802,8 +615,8 @@ export default function UniversityDataPage() {
                 </p>
               </div>
             ) : (
-                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200">
-                  <div className="overflow-x-auto">
+                <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200 flex-1 flex flex-col">
+                  <div className="overflow-x-auto flex-1">
                     <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gradient-to-r from-slate-50 to-slate-100 sticky top-0">
                       <tr>
@@ -817,7 +630,7 @@ export default function UniversityDataPage() {
                           </div>
                         </th>
                         <th
-                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-40"
+                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-32"
                           onClick={() => handleSort("company")}
                         >
                           <div className="flex items-center justify-between w-full">
@@ -826,7 +639,7 @@ export default function UniversityDataPage() {
                           </div>
                         </th>
                         <th
-                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-32"
+                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-48"
                           onClick={() => handleSort("role")}
                         >
                           <div className="flex items-center justify-between w-full">
@@ -886,13 +699,13 @@ export default function UniversityDataPage() {
                               {item.university}
                             </div>
                           </td>
-                          <td className="px-3 py-2 whitespace-nowrap">
-                            <div className="text-sm text-gray-700">
+                          <td className="px-3 py-2 whitespace-nowrap w-32">
+                            <div className="text-sm text-gray-700 truncate">
                               {item.company}
                             </div>
                           </td>
-                          <td className="px-3 py-2 whitespace-nowrap">
-                            <div className="text-sm text-gray-700">
+                          <td className="px-3 py-2 text-sm text-gray-700 w-48">
+                            <div className="break-words">
                               {item.role}
                             </div>
                           </td>

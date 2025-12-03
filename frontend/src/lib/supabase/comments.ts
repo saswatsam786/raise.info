@@ -103,6 +103,7 @@ export const addReply = async (
 
 /**
  * Vote on a comment (upvote or downvote)
+ * Simple approach: Always increment the vote count
  */
 export const voteOnComment = async (
   commentId: string,
@@ -112,7 +113,7 @@ export const voteOnComment = async (
   // Get current comment
   const { data: comment, error: fetchError } = await supabase
     .from("comments")
-    .select("upvotes, downvotes, voted_by")
+    .select("upvotes, downvotes")
     .eq("id", commentId)
     .single();
 
@@ -120,32 +121,14 @@ export const voteOnComment = async (
     throw new Error(`Failed to fetch comment: ${fetchError.message}`);
   }
 
-  const votedBy = (comment.voted_by as any) || {};
-  const currentVote = votedBy[userId];
-
   let upvotes = comment.upvotes;
   let downvotes = comment.downvotes;
 
-  // Remove previous vote if exists
-  if (currentVote) {
-    if (currentVote === "up") {
-      upvotes--;
-    } else {
-      downvotes--;
-    }
-  }
-
-  // Add new vote if different from current
-  if (currentVote !== voteType) {
-    if (voteType === "up") {
-      upvotes++;
-    } else {
-      downvotes++;
-    }
-    votedBy[userId] = voteType;
+  // Simply increment the appropriate vote count
+  if (voteType === "up") {
+    upvotes++;
   } else {
-    // Remove vote if same as current (toggle off)
-    delete votedBy[userId];
+    downvotes++;
   }
 
   // Update comment
@@ -154,7 +137,6 @@ export const voteOnComment = async (
     .update({
       upvotes,
       downvotes,
-      voted_by: votedBy,
     })
     .eq("id", commentId);
 
@@ -226,7 +208,14 @@ export const voteOnReply = async (
 };
 
 /**
- * Get all comments for a salary entry with their replies
+ * Get comments for a salary entry
+ * 
+ * Note: Reply feature is not implemented in UI, so replies are not fetched
+ * 
+ * Performance considerations:
+ * - TODO: Add server-side pagination support (limit/offset parameters) for large comment counts
+ * - Currently fetches all comments (should add pagination for entries with 100+ comments)
+ * - Client-side pagination only shows 3 at a time, but all are loaded
  */
 export const getComments = async (
   salaryId: string,
@@ -243,12 +232,13 @@ export const getComments = async (
     case "oldest":
       query = query.order("created_at", { ascending: true });
       break;
-    case "top":
-      query = query.order("upvotes", { ascending: false });
-      break;
     default: // 'best'
       query = query.order("created_at", { ascending: false });
   }
+
+  // TODO: Add pagination for large comment counts
+  // For now, fetching all comments. Should add limit/offset when comment count > 100
+  // Example: query = query.range(offset, offset + limit - 1);
 
   const { data: comments, error: commentsError } = await query;
 
@@ -256,26 +246,12 @@ export const getComments = async (
     throw new Error(`Failed to fetch comments: ${commentsError.message}`);
   }
 
-  // Get replies for each comment
-  const commentsWithReplies: CommentWithReplies[] = await Promise.all(
-    (comments || []).map(async (comment) => {
-      const { data: replies, error: repliesError } = await supabase
-        .from("replies")
-        .select("*")
-        .eq("comment_id", comment.id)
-        .order("created_at", { ascending: true });
-
-      if (repliesError) {
-        console.error("Failed to fetch replies:", repliesError);
-        return { ...comment, replies: [] };
-      }
-
-      return {
-        ...comment,
-        replies: replies || [],
-      };
-    })
-  );
+  // Reply feature is not implemented in UI, so we don't fetch replies
+  // Return comments with empty replies array to match CommentWithReplies type
+  const commentsWithReplies: CommentWithReplies[] = (comments || []).map((comment) => ({
+    ...comment,
+    replies: [], // Replies not used in UI
+  }));
 
   // Sort by "best" if needed (upvotes - downvotes)
   if (sortOption === "best") {

@@ -1,0 +1,204 @@
+================================================================================
+Company: Asana
+Source: weekday
+Timestamp: 20251204_010156
+================================================================================
+
+RAW SALARY VALUES (ORIGINAL FORMAT):
+--------------------------------------------------------------------------------
+
+Raw Value #1:
+  Role: sales development representative
+  Salary (raw): 13.2 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #2:
+  Role: account executive
+  Salary (raw): 13.2 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+FULL RAW JSON DATA:
+--------------------------------------------------------------------------------
+{
+  "raw_data": {
+    "companyId": "asana",
+    "averageSalaries": [
+      {
+        "yearsOfExperience": 1,
+        "averageSalary": 15
+      },
+      {
+        "yearsOfExperience": 5,
+        "averageSalary": 35
+      },
+      {
+        "yearsOfExperience": 10,
+        "averageSalary": 60
+      }
+    ],
+    "maxSalary": 13.2,
+    "minSalary": 13.2,
+    "roles": [
+      {
+        "role": "sales development representative",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 13.2,
+        "minSalary": 13.2,
+        "individualSalaries": [
+          {
+            "role": "Sales Manager",
+            "yearsOfExperience": 5,
+            "salary": 13.2
+          }
+        ]
+      },
+      {
+        "role": "account executive",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 13.2,
+        "minSalary": 13.2,
+        "individualSalaries": [
+          {
+            "role": "Sales Manager",
+            "yearsOfExperience": 5,
+            "salary": 13.2
+          }
+        ]
+      }
+    ]
+  },
+  "roles": [
+    {
+      "role": "sales development representative",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 13.2,
+      "minSalary": 13.2,
+      "individualSalaries": [
+        {
+          "role": "Sales Manager",
+          "yearsOfExperience": 5,
+          "salary": 13.2
+        }
+      ]
+    },
+    {
+      "role": "account executive",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 13.2,
+      "minSalary": 13.2,
+      "individualSalaries": [
+        {
+          "role": "Sales Manager",
+          "yearsOfExperience": 5,
+          "salary": 13.2
+        }
+      ]
+    }
+  ],
+  "raw_salary_values": [
+    {
+      "role": "sales development representative",
+      "salary": 13.2,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Sales Manager",
+        "yearsOfExperience": 5,
+        "salary": 13.2
+      }
+    },
+    {
+      "role": "account executive",
+      "salary": 13.2,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Sales Manager",
+        "yearsOfExperience": 5,
+        "salary": 13.2
+      }
+    }
+  ],
+  "url": "https://www.weekday.works/salary/what-salary-does-asana-pay"
+}
+
+PROCESSED SALARY RECORDS:
+--------------------------------------------------------------------------------
+
+Record #1:
+  Company: Asana
+  Role: Sales Manager
+  Location: India
+  Base Salary: 1320000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1320000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-asana-pay
+
+Record #2:
+  Company: Asana
+  Role: Sales Manager
+  Location: India
+  Base Salary: 1320000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 1320000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-asana-pay
+
+================================================================================

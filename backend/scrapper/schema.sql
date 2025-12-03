@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS salaries (
 
   -- Additional metadata
   currency TEXT DEFAULT 'INR',
-  job_type TEXT, -- 'full-time', 'contract', 'internship'
+  job_type TEXT CHECK (job_type IN ('full-time', 'internship')), -- 'full-time' or 'internship'
   benefits JSONB DEFAULT '[]'::jsonb, -- Array of benefits
   skills_required TEXT[], -- Array of required skills
   additional_data JSONB DEFAULT '{}'::jsonb,

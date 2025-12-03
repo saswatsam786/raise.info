@@ -1,0 +1,722 @@
+================================================================================
+Company: Cornerstone
+Source: weekday
+Timestamp: 20251204_025628
+================================================================================
+
+RAW SALARY VALUES (ORIGINAL FORMAT):
+--------------------------------------------------------------------------------
+
+Raw Value #1:
+  Role: backend
+  Salary (raw): 20.1 (type: float)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #2:
+  Role: fullstack
+  Salary (raw): 20.1 (type: float)
+  Years of Experience: 8
+  Location: N/A
+
+Raw Value #3:
+  Role: tech lead
+  Salary (raw): 25 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #4:
+  Role: tech lead
+  Salary (raw): 43 (type: int)
+  Years of Experience: 21
+  Location: N/A
+
+Raw Value #5:
+  Role: data science
+  Salary (raw): 25 (type: int)
+  Years of Experience: 12
+  Location: N/A
+
+Raw Value #6:
+  Role: digital marketing manager
+  Salary (raw): 6.6 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #7:
+  Role: growth hacker
+  Salary (raw): 6.6 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #8:
+  Role: Marketing
+  Salary (raw): 6.6 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+Raw Value #9:
+  Role: product marketing manager
+  Salary (raw): 6.6 (type: float)
+  Years of Experience: 5
+  Location: N/A
+
+FULL RAW JSON DATA:
+--------------------------------------------------------------------------------
+{
+  "raw_data": {
+    "companyId": "cornerstone",
+    "averageSalaries": [
+      {
+        "yearsOfExperience": 1,
+        "averageSalary": 5.7
+      },
+      {
+        "yearsOfExperience": 5,
+        "averageSalary": 26.94
+      },
+      {
+        "yearsOfExperience": 10,
+        "averageSalary": 21.9
+      }
+    ],
+    "maxSalary": 43,
+    "minSalary": 5.8,
+    "roles": [
+      {
+        "role": "backend",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 20.1,
+        "minSalary": 20.1,
+        "individualSalaries": [
+          {
+            "role": "Senior Database Administrator",
+            "yearsOfExperience": 8,
+            "salary": 20.1
+          }
+        ]
+      },
+      {
+        "role": "fullstack",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 20.1,
+        "minSalary": 20.1,
+        "individualSalaries": [
+          {
+            "role": "Senior Database Administrator",
+            "yearsOfExperience": 8,
+            "salary": 20.1
+          }
+        ]
+      },
+      {
+        "role": "tech lead",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 3
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 57
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 21
+          }
+        ],
+        "maxSalary": 43,
+        "minSalary": 25,
+        "individualSalaries": [
+          {
+            "role": "Human Resources Director",
+            "yearsOfExperience": 12,
+            "salary": 25
+          },
+          {
+            "role": "Executive Advisor  Leadership & Learning Transformation",
+            "yearsOfExperience": 21,
+            "salary": 43
+          }
+        ]
+      },
+      {
+        "role": "data science",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 25,
+        "minSalary": 25,
+        "individualSalaries": [
+          {
+            "role": "Human Resources Director",
+            "yearsOfExperience": 12,
+            "salary": 25
+          }
+        ]
+      },
+      {
+        "role": "digital marketing manager",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 6.6,
+        "minSalary": 6.6,
+        "individualSalaries": [
+          {
+            "role": "Digital Marketing Manager",
+            "yearsOfExperience": 5,
+            "salary": 6.6
+          }
+        ]
+      },
+      {
+        "role": "growth hacker",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 6.6,
+        "minSalary": 6.6,
+        "individualSalaries": [
+          {
+            "role": "Digital Marketing Manager",
+            "yearsOfExperience": 5,
+            "salary": 6.6
+          }
+        ]
+      },
+      {
+        "role": "Marketing",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 6.6,
+        "minSalary": 6.6,
+        "individualSalaries": [
+          {
+            "role": "Digital Marketing Manager",
+            "yearsOfExperience": 5,
+            "salary": 6.6
+          }
+        ]
+      },
+      {
+        "role": "product marketing manager",
+        "averageSalaries": [
+          {
+            "yearsOfExperience": 1,
+            "averageSalary": 15
+          },
+          {
+            "yearsOfExperience": 5,
+            "averageSalary": 35
+          },
+          {
+            "yearsOfExperience": 10,
+            "averageSalary": 60
+          }
+        ],
+        "maxSalary": 6.6,
+        "minSalary": 6.6,
+        "individualSalaries": [
+          {
+            "role": "Digital Marketing Manager",
+            "yearsOfExperience": 5,
+            "salary": 6.6
+          }
+        ]
+      }
+    ]
+  },
+  "roles": [
+    {
+      "role": "backend",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 20.1,
+      "minSalary": 20.1,
+      "individualSalaries": [
+        {
+          "role": "Senior Database Administrator",
+          "yearsOfExperience": 8,
+          "salary": 20.1
+        }
+      ]
+    },
+    {
+      "role": "fullstack",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 20.1,
+      "minSalary": 20.1,
+      "individualSalaries": [
+        {
+          "role": "Senior Database Administrator",
+          "yearsOfExperience": 8,
+          "salary": 20.1
+        }
+      ]
+    },
+    {
+      "role": "tech lead",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 3
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 57
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 21
+        }
+      ],
+      "maxSalary": 43,
+      "minSalary": 25,
+      "individualSalaries": [
+        {
+          "role": "Human Resources Director",
+          "yearsOfExperience": 12,
+          "salary": 25
+        },
+        {
+          "role": "Executive Advisor  Leadership & Learning Transformation",
+          "yearsOfExperience": 21,
+          "salary": 43
+        }
+      ]
+    },
+    {
+      "role": "data science",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 25,
+      "minSalary": 25,
+      "individualSalaries": [
+        {
+          "role": "Human Resources Director",
+          "yearsOfExperience": 12,
+          "salary": 25
+        }
+      ]
+    },
+    {
+      "role": "digital marketing manager",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 6.6,
+      "minSalary": 6.6,
+      "individualSalaries": [
+        {
+          "role": "Digital Marketing Manager",
+          "yearsOfExperience": 5,
+          "salary": 6.6
+        }
+      ]
+    },
+    {
+      "role": "growth hacker",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 6.6,
+      "minSalary": 6.6,
+      "individualSalaries": [
+        {
+          "role": "Digital Marketing Manager",
+          "yearsOfExperience": 5,
+          "salary": 6.6
+        }
+      ]
+    },
+    {
+      "role": "Marketing",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 6.6,
+      "minSalary": 6.6,
+      "individualSalaries": [
+        {
+          "role": "Digital Marketing Manager",
+          "yearsOfExperience": 5,
+          "salary": 6.6
+        }
+      ]
+    },
+    {
+      "role": "product marketing manager",
+      "averageSalaries": [
+        {
+          "yearsOfExperience": 1,
+          "averageSalary": 15
+        },
+        {
+          "yearsOfExperience": 5,
+          "averageSalary": 35
+        },
+        {
+          "yearsOfExperience": 10,
+          "averageSalary": 60
+        }
+      ],
+      "maxSalary": 6.6,
+      "minSalary": 6.6,
+      "individualSalaries": [
+        {
+          "role": "Digital Marketing Manager",
+          "yearsOfExperience": 5,
+          "salary": 6.6
+        }
+      ]
+    }
+  ],
+  "raw_salary_values": [
+    {
+      "role": "backend",
+      "salary": 20.1,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Database Administrator",
+        "yearsOfExperience": 8,
+        "salary": 20.1
+      }
+    },
+    {
+      "role": "fullstack",
+      "salary": 20.1,
+      "yearsOfExperience": 8,
+      "full_record": {
+        "role": "Senior Database Administrator",
+        "yearsOfExperience": 8,
+        "salary": 20.1
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 25,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Human Resources Director",
+        "yearsOfExperience": 12,
+        "salary": 25
+      }
+    },
+    {
+      "role": "tech lead",
+      "salary": 43,
+      "yearsOfExperience": 21,
+      "full_record": {
+        "role": "Executive Advisor  Leadership & Learning Transformation",
+        "yearsOfExperience": 21,
+        "salary": 43
+      }
+    },
+    {
+      "role": "data science",
+      "salary": 25,
+      "yearsOfExperience": 12,
+      "full_record": {
+        "role": "Human Resources Director",
+        "yearsOfExperience": 12,
+        "salary": 25
+      }
+    },
+    {
+      "role": "digital marketing manager",
+      "salary": 6.6,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Digital Marketing Manager",
+        "yearsOfExperience": 5,
+        "salary": 6.6
+      }
+    },
+    {
+      "role": "growth hacker",
+      "salary": 6.6,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Digital Marketing Manager",
+        "yearsOfExperience": 5,
+        "salary": 6.6
+      }
+    },
+    {
+      "role": "Marketing",
+      "salary": 6.6,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Digital Marketing Manager",
+        "yearsOfExperience": 5,
+        "salary": 6.6
+      }
+    },
+    {
+      "role": "product marketing manager",
+      "salary": 6.6,
+      "yearsOfExperience": 5,
+      "full_record": {
+        "role": "Digital Marketing Manager",
+        "yearsOfExperience": 5,
+        "salary": 6.6
+      }
+    }
+  ],
+  "url": "https://www.weekday.works/salary/what-salary-does-cornerstone-pay"
+}
+
+PROCESSED SALARY RECORDS:
+--------------------------------------------------------------------------------
+
+Record #1:
+  Company: Cornerstone
+  Role: Senior Database Administrator
+  Location: India
+  Base Salary: 2010000.0000000002
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2010000.0000000002
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #2:
+  Company: Cornerstone
+  Role: Senior Database Administrator
+  Location: India
+  Base Salary: 2010000.0000000002
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2010000.0000000002
+  Years of Experience: 8
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #3:
+  Company: Cornerstone
+  Role: Human Resources Director
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #4:
+  Company: Cornerstone
+  Role: Executive Advisor  Leadership & Learning Transformation
+  Location: India
+  Base Salary: 4300000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 4300000
+  Years of Experience: 21
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #5:
+  Company: Cornerstone
+  Role: Human Resources Director
+  Location: India
+  Base Salary: 2500000
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 2500000
+  Years of Experience: 12
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #6:
+  Company: Cornerstone
+  Role: Digital Marketing Manager
+  Location: India
+  Base Salary: 660000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 660000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #7:
+  Company: Cornerstone
+  Role: Digital Marketing Manager
+  Location: India
+  Base Salary: 660000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 660000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #8:
+  Company: Cornerstone
+  Role: Digital Marketing Manager
+  Location: India
+  Base Salary: 660000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 660000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+Record #9:
+  Company: Cornerstone
+  Role: Digital Marketing Manager
+  Location: India
+  Base Salary: 660000.0
+  Bonus: 0
+  Stock: 0
+  Total Compensation: 660000.0
+  Years of Experience: 5
+  Source Platform: weekday
+  Source URL: https://www.weekday.works/salary/what-salary-does-cornerstone-pay
+
+================================================================================

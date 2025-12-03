@@ -1,8 +1,12 @@
 "use client";
 
-import React, { useMemo, useEffect } from "react";
-import { X } from "lucide-react";
+import React, { useMemo, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { X, Maximize2, MessageSquare, Share2 } from "lucide-react";
 import { CommentSection } from "./comments";
+import { useAuth } from "@/contexts/AuthContext";
+import { voteOnSalary, getUserVote } from "@/lib/supabase/salaryVotes";
+import VoteButtons from "./comments/VoteButtons";
 
 interface SalaryData {
   id?: string;
@@ -44,6 +48,16 @@ export default function SalaryDetailsPanel({
   data,
   onRefresh,
 }: SalaryDetailsPanelProps) {
+  const router = useRouter();
+  const { user } = useAuth();
+  const [votes, setVotes] = useState({
+    upvotes: data?.upvotes || 0,
+    downvotes: data?.downvotes || 0,
+  });
+  const [userVote, setUserVote] = useState<"up" | "down" | null>(null);
+  const [isVoting, setIsVoting] = useState(false);
+  const [commentCount, setCommentCount] = useState(0);
+  
   // Generate a unique salary ID for comments/votes
   const salaryId = useMemo(() => {
     if (!data) return "";
@@ -58,17 +72,173 @@ export default function SalaryDetailsPanel({
     return `${company}-${role}-${location}`.toLowerCase().replace(/\s+/g, "-");
   }, [data]);
 
+  const handleExpand = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (!data?.id) {
+      console.log("No ID found in data");
+      return;
+    }
+
+    // Check if it's a valid UUID (database entry)
+    // UUID format: 8-4-4-4-12 hexadecimal characters
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    if (uuidRegex.test(data.id)) {
+      // Database entry - navigate to the page
+      router.push(`/salaries/${data.id}`);
+    } else {
+      // TODO: Remove this else block once hardcoded data for internships and university is no longer used
+      // Hardcoded entry - pass data via sessionStorage
+      const expandedData = {
+        id: data.id,
+        company_name: data.company_name || data.company,
+        designation: data.designation || data.role,
+        location: data.location,
+        yoe: data.yoe || 0,
+        avg_salary: data.avg_salary || data.stipend_avg || data.total_compensation || 0,
+        data_points_count: data.reports || 1,
+        reports: data.reports || 1,
+        base_salary: data.base_salary,
+        bonus: data.bonus,
+        stock_compensation: data.stock_compensation,
+        total_compensation: data.total_compensation || data.avg_salary || data.stipend_avg,
+        upvotes: data.upvotes || 0,
+        downvotes: data.downvotes || 0,
+        stipend_avg: data.stipend_avg,
+        duration: data.duration,
+        university: data.university,
+        employment_type: data.employment_type,
+        year: data.year,
+        additional_data: data.duration ? { duration: data.duration } : undefined,
+        job_type: data.stipend_avg ? "internship" : undefined,
+      };
+      // Store data in sessionStorage for the expanded page to retrieve
+      sessionStorage.setItem(`salary_${data.id}`, JSON.stringify(expandedData));
+      // Navigate to the page
+      router.push(`/salaries/${data.id}`);
+    }
+  };
+
+  // Update votes when data changes
+  useEffect(() => {
+    if (data) {
+      setVotes({
+        upvotes: data.upvotes || 0,
+        downvotes: data.downvotes || 0,
+      });
+    }
+  }, [data?.id, data?.upvotes, data?.downvotes]);
+
+  const loadUserVote = async () => {
+    try {
+      const vote = await getUserVote(salaryId);
+      setUserVote(vote);
+    } catch (error) {
+      console.error("Error loading user vote:", error);
+      setUserVote(null); // Reset on error
+    }
+  };
+
+  // Load user vote
+  useEffect(() => {
+    if (salaryId && data?.id && user) {
+      // Only load user vote if user is logged in and we have a valid UUID
+      const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+      if (uuidRegex.test(data.id)) {
+        loadUserVote();
+      } else {
+        // For non-UUID entries (hardcoded data), reset userVote
+        setUserVote(null);
+      }
+    } else {
+      // Reset userVote if no user or no data
+      setUserVote(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [salaryId, data?.id, user]);
+
+  const handleVote = async (voteType: "up" | "down") => {
+    if (!user) {
+      alert("Please log in to vote");
+      return;
+    }
+
+    if (isVoting || !data?.id) return;
+
+    // Only allow voting on database entries (UUIDs), not hardcoded data
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    if (!uuidRegex.test(data.id)) {
+      alert("Voting is only available for verified salary entries");
+      return;
+    }
+
+    // Prevent voting if user has already voted
+    if (userVote) {
+      alert("You have already voted on this salary entry");
+      return;
+    }
+
+    try {
+      setIsVoting(true);
+      const result = await voteOnSalary(salaryId, voteType);
+
+      if (result.success) {
+        // Update local state immediately to reflect the vote
+        setVotes((prev) => {
+          if (voteType === "up") {
+            return { ...prev, upvotes: (prev.upvotes || 0) + 1 };
+          } else {
+            return { ...prev, downvotes: (prev.downvotes || 0) + 1 };
+          }
+        });
+
+        // Mark that user has voted and reload from database to confirm
+        setUserVote(voteType);
+        
+        // Wait a bit longer for the database trigger to update the counts
+        // Then refresh parent component data to sync with database
+        if (onRefresh) {
+          setTimeout(async () => {
+            // Reload user vote to confirm
+            await loadUserVote();
+            // Refresh parent data
+            onRefresh();
+          }, 1000); // Increased delay to ensure database trigger completes
+        }
+      } else {
+        // Show error message if voting failed
+        if (result.message) {
+          alert(result.message);
+        }
+      }
+    } catch (error) {
+      console.error("Error voting:", error);
+      alert("An error occurred while voting. Please try again.");
+    } finally {
+      setIsVoting(false);
+    }
+  };
+
   // Debug logging
   useEffect(() => {
-    if (salaryId && data) {
+    if (data) {
       console.log(
-        "SalaryDetailsPanel - salaryId:",
-        salaryId,
+        "SalaryDetailsPanel - data:",
+        data,
         "data.id:",
-        data.id
+        data.id,
+        "has id:",
+        !!data.id,
+        "user:",
+        user?.id,
+        "userVote:",
+        userVote,
+        "isVoting:",
+        isVoting
       );
     }
-  }, [salaryId, data]);
+  }, [data, user, userVote, isVoting]);
 
   const formatCurrency = (amount: number) => {
     return `Rs ${new Intl.NumberFormat("en-IN").format(amount)}`;
@@ -164,74 +334,167 @@ export default function SalaryDetailsPanel({
   if (!isOpen || !data) return null;
 
   return (
-    <div className="w-[30%] bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200">
-      <div className="flex flex-col h-full">
+    <div className="w-[30%] bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200 flex flex-col h-full">
+      <div className="flex flex-col flex-1 min-h-0">
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-slate-50 to-slate-100">
-          <div>
-            <h2 className="text-sm font-semibold text-gray-900">
-              {data.company_name || data.company}
-            </h2>
-            <p className="text-sm text-gray-700 mt-1">
-              {data.designation || data.role} • {data.location}
-            </p>
+        <div className="px-6 py-4 border-b border-gray-200 bg-white">
+          <div className="flex items-start justify-between">
+            <div className="flex-1">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-lg font-bold text-gray-900">
+                    {data.company_name || data.company}
+                  </h2>
+                  <img
+                    src="/verified_logo.png"
+                    alt="Verified"
+                    className="w-8 h-8"
+                  />
+                </div>
+                <div className="flex items-center gap-1">
+                  {data?.id && (
+                    <button
+                      onClick={handleExpand}
+                      className="p-1.5 hover:bg-slate-100 rounded-lg transition-colors cursor-pointer"
+                      title="Expand to full page"
+                      type="button"
+                    >
+                      <Maximize2 className="w-4 h-4 text-gray-600" />
+                    </button>
+                  )}
+                  <button
+                    onClick={onClose}
+                    className="p-1.5 hover:bg-slate-100 rounded-lg transition-colors"
+                  >
+                    <X className="w-4 h-4 text-gray-600" />
+                  </button>
+                </div>
+              </div>
+              <p className="text-sm text-gray-700 mt-1">
+                {data.designation || data.role} • {data.location}
+              </p>
+            </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-slate-200 rounded-lg transition-colors"
-          >
-            <X className="w-5 h-5 text-gray-600" />
-          </button>
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto bg-white">
+        <div className="flex-1 overflow-y-auto bg-white min-h-0 flex flex-col">
           {/* CTC Breakup Section */}
-          <div className="px-6 py-3">
-            <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-lg p-3 border border-gray-200">
-              <h3 className="text-sm font-semibold text-gray-900 mb-2">
-                CTC Breakup
-              </h3>
-              {ctcBreakup && (
-                <div className="w-full space-y-2">
-                  {ctcBreakup.components.map((component, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-between px-3 py-2 bg-white rounded-md border border-gray-200 shadow-sm h-12"
-                    >
-                      <span className="text-xs text-gray-700 font-medium">
-                        {component.name}
-                      </span>
-                      <div className="text-right">
-                        <div className="text-xs font-semibold text-gray-900">
-                          {formatCurrencyCompact(component.amount)}
-                        </div>
-                        <div className="text-xs text-gray-500">
-                          {component.percentage}%
-                        </div>
+          <div className="px-6 py-4 flex-shrink-0">
+            <h3 className="text-base font-semibold text-gray-900 mb-3">
+              CTC Breakup
+            </h3>
+            {ctcBreakup && (
+              <div className="w-full space-y-2">
+                {ctcBreakup.components.map((component, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between px-4 py-3 bg-white rounded-lg border border-gray-200 shadow-sm"
+                  >
+                    <span className="text-sm text-gray-700 font-medium">
+                      {component.name}
+                    </span>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold text-gray-900">
+                        {formatCurrencyCompact(component.amount)}
+                      </div>
+                      <div className="text-xs text-gray-500">
+                        {component.percentage}%
                       </div>
                     </div>
-                  ))}
-                  <div className="flex items-center justify-between px-3 py-2 bg-slate-200 rounded-md border-2 border-slate-300 h-12">
-                    <span className="text-xs font-bold text-gray-900">
-                      Total CTC
-                    </span>
-                    <span className="text-xs font-bold text-gray-900">
-                      {formatCurrencyCompact(ctcBreakup.total)}
-                    </span>
                   </div>
+                ))}
+                <div className="flex items-center justify-between px-4 py-3 bg-gray-200 rounded-lg border-2 border-gray-300 mt-2">
+                  <span className="text-sm font-bold text-gray-900">
+                    Total CTC
+                  </span>
+                  <span className="text-sm font-bold text-gray-900">
+                    {formatCurrencyCompact(ctcBreakup.total)}
+                  </span>
                 </div>
-              )}
+              </div>
+            )}
+          </div>
+
+          {/* Interaction Bar */}
+          <div className="px-6 py-3 flex-shrink-0">
+            <div className="flex items-center gap-6">
+              {(() => {
+                const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+                const isValidUuid = data?.id ? uuidRegex.test(data.id) : false;
+                const isDisabled = isVoting || !user || !data?.id || !!userVote || !isValidUuid;
+                
+                // Debug logging
+                if (data?.id) {
+                  console.log("VoteButtons disabled check:", {
+                    isVoting,
+                    hasUser: !!user,
+                    userId: user?.id,
+                    hasDataId: !!data?.id,
+                    dataId: data?.id,
+                    hasUserVote: !!userVote,
+                    userVote,
+                    isValidUuid,
+                    isDisabled,
+                    reasons: {
+                      isVoting,
+                      noUser: !user,
+                      noDataId: !data?.id,
+                      hasVoted: !!userVote,
+                      invalidUuid: !isValidUuid,
+                    }
+                  });
+                }
+                
+                return (
+                  <div className="flex items-center gap-2">
+                    <VoteButtons
+                      upvotes={votes.upvotes}
+                      downvotes={votes.downvotes}
+                      userVote={userVote}
+                      onVote={(voteType) => handleVote(voteType)}
+                      isDisabled={isDisabled}
+                    />
+                    {!user && (
+                      <span className="text-xs text-gray-500 italic">
+                        (Login to vote)
+                      </span>
+                    )}
+                    {user && !isValidUuid && data?.id && (
+                      <span className="text-xs text-gray-500 italic">
+                        (Voting only for verified entries)
+                      </span>
+                    )}
+                    {user && isValidUuid && !!userVote && (
+                      <span className="text-xs text-gray-500 italic">
+                        (Already voted)
+                      </span>
+                    )}
+                  </div>
+                );
+              })()}
+
+              <div className="flex items-center gap-2">
+                <MessageSquare className="w-5 h-5 text-gray-600" />
+                <span className="text-sm font-medium text-gray-600">
+                  {commentCount}
+                </span>
+              </div>
+
+              <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors ml-auto">
+                <Share2 className="w-5 h-5" />
+              </button>
             </div>
           </div>
 
           {/* Comments Section */}
-          <div className="px-6 pb-4">
+          <div className="px-6 pt-4 pb-4 border-t border-gray-200 flex-1 min-h-0 overflow-y-auto">
             <CommentSection
               salaryId={salaryId}
               upvoteCount={data.upvotes || 0}
               downvoteCount={data.downvotes || 0}
               onVoteChange={onRefresh}
+              onCommentCountChange={setCommentCount}
             />
           </div>
         </div>

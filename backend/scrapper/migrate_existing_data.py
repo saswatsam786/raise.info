@@ -106,7 +106,7 @@ def main():
         db = SupabaseClient()
     except ValueError as e:
         logger.error(f"Failed to initialize Supabase client: {e}")
-        logger.error("Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables")
+        logger.error("Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables")
         return
 
     # Path to your existing salary JSON file

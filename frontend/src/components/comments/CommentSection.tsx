@@ -1,13 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { MessageSquare, Share2 } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import CommentInput from "./CommentInput";
 import CommentItem from "./CommentItem";
 import { CommentWithReplies, SortOption, Attachment } from "@/types/comments";
 import { useAuth } from "@/contexts/AuthContext";
 import { getComments, addComment, voteOnComment, deleteComment } from "@/lib/supabase/comments";
-import { voteOnSalary, getUserVote } from "@/lib/supabase/salaryVotes";
 
 interface CommentSectionProps {
   salaryId: string;
@@ -15,6 +14,7 @@ interface CommentSectionProps {
   downvoteCount?: number;
   initialCommentCount?: number;
   onVoteChange?: () => void;
+  onCommentCountChange?: (count: number) => void;
 }
 
 export default function CommentSection({
@@ -23,6 +23,7 @@ export default function CommentSection({
   downvoteCount = 6,
   initialCommentCount = 0,
   onVoteChange,
+  onCommentCountChange,
 }: CommentSectionProps) {
   const { user } = useAuth();
   const [comments, setComments] = useState<CommentWithReplies[]>([]);
@@ -31,27 +32,12 @@ export default function CommentSection({
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(3);
   const [commentCount, setCommentCount] = useState(initialCommentCount);
-  const [votes, setVotes] = useState({
-    upvotes: upvoteCount,
-    downvotes: downvoteCount,
-  });
   const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Update votes when prop changes (from refresh)
-  useEffect(() => {
-    setVotes({
-      upvotes: upvoteCount,
-      downvotes: downvoteCount,
-    });
-  }, [upvoteCount, downvoteCount]);
-  const [userVote, setUserVote] = useState<"up" | "down" | null>(null);
-  const [isVoting, setIsVoting] = useState(false);
-
-  // Load comments and user vote
+  // Load comments
   useEffect(() => {
     loadComments();
-    loadUserVote();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [salaryId, sortBy]);
 
@@ -60,66 +46,16 @@ export default function CommentSection({
       setLoading(true);
       const fetchedComments = await getComments(salaryId, sortBy);
       setComments(fetchedComments);
-      setCommentCount(fetchedComments.length);
+      const count = fetchedComments.length;
+      setCommentCount(count);
+      if (onCommentCountChange) {
+        onCommentCountChange(count);
+      }
       setCurrentPage(1);
     } catch (error) {
       console.error("Error loading comments:", error);
     } finally {
       setLoading(false);
-    }
-  };
-
-  const loadUserVote = async () => {
-    try {
-      const vote = await getUserVote(salaryId);
-      setUserVote(vote);
-    } catch (error) {
-      console.error("Error loading user vote:", error);
-    }
-  };
-
-  const handleVote = async (voteType: "up" | "down") => {
-    if (!user) {
-      alert("Please log in to vote");
-      return;
-    }
-
-    if (isVoting) return;
-
-    try {
-      setIsVoting(true);
-      console.log("Voting with salaryId:", salaryId, "voteType:", voteType);
-      const result = await voteOnSalary(salaryId, voteType);
-      console.log("Vote result:", result);
-
-      if (result.success) {
-        // Update local vote state
-        if (userVote === voteType) {
-          // Toggling off - already handled by DB trigger, just update userVote
-          setUserVote(null);
-        } else if (userVote) {
-          // Switching vote type - already handled by DB trigger
-          setUserVote(voteType);
-        } else {
-          // New vote - already handled by DB trigger
-          setUserVote(voteType);
-        }
-
-        // Notify parent to refresh data after a delay to let DB trigger complete
-        if (onVoteChange) {
-          setTimeout(() => {
-            onVoteChange();
-          }, 500);
-        }
-      } else {
-        console.error("Vote failed:", result.message);
-        alert(result.message || "Failed to vote");
-      }
-    } catch (error) {
-      console.error("Error voting:", error);
-      alert("An error occurred while voting");
-    } finally {
-      setIsVoting(false);
     }
   };
 
@@ -192,8 +128,7 @@ export default function CommentSection({
     }
   };
 
-  // Reply feature removed
-
+  // Delete comment handler
   const handleDeleteComment = (commentId: string) => {
     setPendingDeleteId(commentId);
   };
@@ -207,86 +142,17 @@ export default function CommentSection({
       await loadComments();
     } catch (error) {
       console.error("Error deleting comment:", error);
+      alert("Failed to delete comment. Please try again.");
     } finally {
       setIsDeleting(false);
     }
   };
 
-  // Reply feature removed
-
   return (
-    <div className="mt-6">
-      {/* Stats Bar */}
-      <div className="flex items-center gap-6 mb-4 pb-4 border-b border-slate-200">
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => handleVote("up")}
-            disabled={isVoting || !user}
-            className={`flex items-center gap-1 transition-colors ${
-              userVote === "up"
-                ? "text-green-600 hover:text-green-700"
-                : "text-slate-600 hover:text-slate-800"
-            } disabled:opacity-50 disabled:cursor-not-allowed`}
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 15l7-7 7 7"
-              />
-            </svg>
-            <span className="text-sm font-medium">{votes.upvotes}</span>
-          </button>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => handleVote("down")}
-            disabled={isVoting || !user}
-            className={`flex items-center gap-1 transition-colors ${
-              userVote === "down"
-                ? "text-red-600 hover:text-red-700"
-                : "text-slate-600 hover:text-slate-800"
-            } disabled:opacity-50 disabled:cursor-not-allowed`}
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-            <span className="text-sm font-medium">{votes.downvotes}</span>
-          </button>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <MessageSquare className="w-5 h-5 text-slate-600" />
-          <span className="text-sm font-medium text-slate-600">
-            {commentCount}
-          </span>
-        </div>
-
-        <button className="flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors ml-auto">
-          <Share2 className="w-5 h-5" />
-        </button>
-      </div>
-
+    <div>
       {/* Comments Header */}
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-slate-800">
+        <h3 className="text-base font-semibold text-gray-900">
           Comments ({commentCount})
         </h3>
         <div className="relative">
@@ -298,7 +164,6 @@ export default function CommentSection({
             <option value="best">Sort by: Best</option>
             <option value="newest">Sort by: Newest</option>
             <option value="oldest">Sort by: Oldest</option>
-            <option value="top">Sort by: Top</option>
           </select>
           <svg
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none"

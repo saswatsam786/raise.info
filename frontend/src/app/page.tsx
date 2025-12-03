@@ -61,7 +61,7 @@ export default function PayScope() {
             location: string;
             years_of_experience: number | null;
             avg_salary: number;
-            data_points_count: number;
+            data_points_count: number | null;
             base_salary?: number;
             bonus?: number;
             stock_compensation?: number;
@@ -75,7 +75,7 @@ export default function PayScope() {
             location: item.location,
             yoe: item.years_of_experience || 0,
             avg_salary: item.avg_salary || 0,
-            reports: item.data_points_count || 0,
+            reports: (item.data_points_count ?? 1) + ((item.upvotes || 0) - (item.downvotes || 0)),
             base_salary: item.base_salary,
             bonus: item.bonus,
             stock_compensation: item.stock_compensation,
@@ -178,7 +178,7 @@ export default function PayScope() {
           location: string;
           years_of_experience: number | null;
           avg_salary: number;
-          data_points_count: number;
+          data_points_count: number | null;
           base_salary?: number;
           bonus?: number;
           stock_compensation?: number;
@@ -192,7 +192,7 @@ export default function PayScope() {
           location: item.location,
           yoe: item.years_of_experience || 0,
           avg_salary: item.avg_salary || 0,
-          reports: item.data_points_count || 0,
+          reports: (item.data_points_count ?? 1) + ((item.upvotes || 0) - (item.downvotes || 0)),
           base_salary: item.base_salary,
           bonus: item.bonus,
           stock_compensation: item.stock_compensation,
@@ -203,6 +203,16 @@ export default function PayScope() {
       );
 
       setSalaries(transformedData);
+
+      // Update selectedSalaryData if it's still selected
+      if (selectedSalaryData?.id) {
+        const updatedSelected = transformedData.find(
+          (item) => item.id === selectedSalaryData.id
+        );
+        if (updatedSelected) {
+          setSelectedSalaryData(updatedSelected);
+        }
+      }
     } catch (error) {
       console.error("Error refreshing salaries:", error);
     }
@@ -698,7 +708,7 @@ export default function PayScope() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {/* Table and Side Panel Container */}
         <div
-          className={`flex gap-4 transition-all duration-500 ease-in-out min-h-[600px] ${
+          className={`flex gap-4 transition-all duration-500 ease-in-out items-stretch ${
             isSidePanelOpen ? "" : ""
           }`}
         >
@@ -740,13 +750,13 @@ export default function PayScope() {
             ) : (
               <>
                 {/* Table */}
-                <div className="bg-white dark:bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200">
-                  <div className="overflow-x-auto">
+                <div className="bg-white dark:bg-white shadow-sm rounded-xl overflow-hidden border border-gray-200 flex-1 flex flex-col">
+                  <div className="overflow-x-auto flex-1">
                     <table className="min-w-full divide-y divide-gray-200 table-fixed">
                       <thead className="bg-gradient-to-r from-slate-50 to-slate-100 sticky top-0">
                         <tr>
                           <th
-                            className="group px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-slate-200 transition-colors select-none w-48"
+                            className="group px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-slate-200 transition-colors select-none w-36"
                             onClick={() => handleSort("company_name")}
                           >
                             <div className="flex items-center justify-between w-full">
@@ -755,7 +765,7 @@ export default function PayScope() {
                             </div>
                           </th>
                           <th
-                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-40"
+                            className="group px-3 py-2 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none w-52"
                             onClick={() => handleSort("designation")}
                           >
                             <div className="flex items-center justify-between w-full">
@@ -808,19 +818,16 @@ export default function PayScope() {
                             }`}
                             onClick={() => handleRowClick(item, index)}
                           >
-                            <td className="px-3 py-2 whitespace-nowrap">
+                            <td className="px-3 py-2 whitespace-nowrap w-36">
                               <div
-                                className="text-sm font-semibold text-gray-900 truncate max-w-[180px]"
+                                className="text-sm font-semibold text-gray-900 truncate"
                                 title={item.company_name}
                               >
                                 {item.company_name}
                               </div>
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              <div
-                                className="truncate max-w-[140px]"
-                                title={item.designation}
-                              >
+                            <td className="px-6 py-4 text-sm text-gray-700 w-52">
+                              <div className="break-words">
                                 {item.designation}
                               </div>
                             </td>
@@ -839,7 +846,7 @@ export default function PayScope() {
                               {formatCurrency(item.avg_salary)}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              {item.upvotes || 0}
+                              {item.reports}
                             </td>
                           </tr>
                         ))}

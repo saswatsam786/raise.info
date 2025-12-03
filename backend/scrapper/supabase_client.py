@@ -8,6 +8,7 @@ from supabase import create_client, Client
 from datetime import datetime
 from typing import List, Dict, Optional, Any
 import logging
+import requests
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -16,16 +17,19 @@ logger = logging.getLogger(__name__)
 class SupabaseClient:
     def __init__(self):
         """Initialize Supabase client with environment variables"""
-        self.url = os.environ.get("SUPABASE_URL")
+        self.url = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
         self.key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
 
         if not self.url or not self.key:
             raise ValueError(
                 "Missing Supabase credentials. "
-                "Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables."
+                "Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables."
             )
 
         self.client: Client = create_client(self.url, self.key)
+        # Base URL of the Next.js app API (used to reuse aggregation logic)
+        # Defaults to local dev URL; can be overridden in env.
+        self.api_base_url = os.environ.get("SALARIS_API_URL", "http://localhost:3000")
         logger.info("Supabase client initialized successfully")
 
     def company_exists(self, company_name: str) -> bool:
@@ -150,22 +154,60 @@ class SupabaseClient:
 
     def insert_salaries(self, salaries: List[Dict[str, Any]]) -> int:
         """
-        Bulk insert salary records
-        Returns: number of records inserted
+        Insert salary records via the aggregation endpoint.
+        Returns: number of records successfully processed
         """
         if not salaries:
             return 0
 
-        try:
-            response = self.client.table("salaries").insert(salaries).execute()
-            count = len(response.data)
-            logger.info(f"Inserted {count} salary records")
-            return count
+        processed = 0
 
-        except Exception as e:
-            logger.error(f"Error inserting salaries: {e}")
-            logger.error(f"Sample data: {salaries[0] if salaries else 'None'}")
-            raise
+        for salary in salaries:
+            try:
+                # Map normalized scraper record to the CreateSalaryInput shape
+                payload = {
+                    "company": salary.get("company_name", ""),
+                    "role": salary.get("designation", ""),
+                    "location": salary.get("location", ""),
+                    "yearsOfExperience": (
+                        str(salary.get("years_of_experience"))
+                        if salary.get("years_of_experience") is not None
+                        else ""
+                    ),
+                    "baseSalary": str(salary.get("base_salary") or ""),
+                    "bonus": str(salary.get("bonus") or ""),
+                    "stockCompensation": str(salary.get("stock_compensation") or ""),
+                    "totalCompensation": str(salary.get("total_compensation") or ""),
+                    # Treat scraper data as full-time salary entries by default
+                    "type": "fulltime",
+                    "employmentType": "Full-time",
+                    # Internship/university-specific fields left empty
+                    "duration": "",
+                    "stipend": "",
+                    "university": "",
+                    "year": "",
+                }
+
+                resp = requests.post(
+                    f"{self.api_base_url}/api/salaries",
+                    json=payload,
+                    timeout=15,
+                )
+
+                if resp.status_code == 201:
+                    processed += 1
+                else:
+                    logger.error(
+                        "Failed to POST salary to API: status=%s, body=%s",
+                        resp.status_code,
+                        resp.text,
+                    )
+            except Exception as e:
+                logger.error(f"Error inserting salary via API: {e}")
+                logger.error(f"Offending record: {salary}")
+
+        logger.info(f"Processed {processed} salary records via API")
+        return processed
 
     def salary_exists(
         self,

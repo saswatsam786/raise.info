@@ -1,15 +1,6 @@
-export interface CreateSalaryInput {
-  company: string;
-  role: string;
-  location: string;
-  yearsOfExperience?: string;
-  baseSalary?: string;
-  bonus?: string;
-  stockCompensation?: string;
-  totalCompensation: string;
-  type: "fulltime" | "internship" | "university";
-  employmentType?: "Full-time" | "Internship";
-}
+import type { SalaryPayload } from "../payloads/salaries";
+
+export type CreateSalaryInput = SalaryPayload;
 
 export interface SalaryRecord {
   id: string;
@@ -25,6 +16,7 @@ export interface SalaryRecord {
   total_compensation?: number | null;
   upvotes?: number | null;
   downvotes?: number | null;
+  additional_data?: any;
 }
 
 

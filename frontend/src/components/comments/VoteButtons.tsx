@@ -32,15 +32,7 @@ export default function VoteButtons({
       >
         <ChevronUp className="w-5 h-5" />
       </button>
-      <span
-        className={`text-sm font-medium min-w-[2rem] text-center ${
-          score > 0
-            ? "text-orange-600"
-            : score < 0
-            ? "text-blue-600"
-            : "text-slate-600"
-        }`}
-      >
+      <span className="text-sm font-medium min-w-[2rem] text-center text-slate-600">
         {score}
       </span>
       <button

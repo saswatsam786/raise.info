@@ -14,7 +14,7 @@ export async function insertSalary(
     .from("salaries")
     .insert(payload)
     .select(
-      "id, company_name, designation, location, years_of_experience, avg_salary, data_points_count, base_salary, bonus, stock_compensation, total_compensation, upvotes, downvotes"
+      "id, company_name, designation, location, years_of_experience, avg_salary, data_points_count, base_salary, bonus, stock_compensation, total_compensation, upvotes, downvotes, additional_data"
     )
     .single();
 
