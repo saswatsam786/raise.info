@@ -86,11 +86,6 @@ Notes:
 - Backend TypeScript (services, repository, server Supabase client) uses the root `tsconfig.json`.
 - Scraping and SQL scripts live under `backend/scrapper` and `backend/backend/database`.
 
-## 👥 Team
-
-- **[Riya Kumari Jha](https://www.linkedin.com/in/riya-jha-7b4774210/)** – Developer  
-- **[Saswat Samal](https://www.linkedin.com/in/saswatsam/)** – Developer
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a PR.
