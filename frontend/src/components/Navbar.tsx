@@ -7,6 +7,7 @@ import { useAuth } from "@/contexts/AuthContext";
 export default function Navbar() {
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const { user, signOut, openAuthModal } = useAuth();
+  const adminEmail = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -116,6 +117,15 @@ export default function Navbar() {
                           {user.email}
                         </p>
                       </div>
+                      {adminEmail && user.email === adminEmail && (
+                        <Link
+                          href="/admin"
+                          className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-100 transition-colors"
+                          onClick={() => setIsUserDropdownOpen(false)}
+                        >
+                          Admin Dashboard
+                        </Link>
+                      )}
                       <button
                         onClick={() => {
                           signOut();
