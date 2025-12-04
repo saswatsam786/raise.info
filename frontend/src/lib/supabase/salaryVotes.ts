@@ -1,13 +1,28 @@
 import { supabase } from "./config";
 
 /**
+ * Get the access token for API authentication
+ */
+async function getAccessToken(): Promise<string | null> {
+  try {
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    return session?.access_token || null;
+  } catch (error) {
+    console.error("Error getting access token:", error);
+    return null;
+  }
+}
+
+/**
  * Vote on a salary entry (upvote or downvote)
- * Users can only vote once per salary entry
+ * Handles creating new votes, updating existing votes, and removing votes
  */
 export const voteOnSalary = async (
   salaryId: string,
   voteType: "up" | "down"
-): Promise<{ success: boolean; message?: string }> => {
+): Promise<{ success: boolean; message?: string; upvotes?: number; downvotes?: number; userVote?: "up" | "down" | null }> => {
   try {
     // Get current user
     const {
@@ -18,63 +33,77 @@ export const voteOnSalary = async (
       return { success: false, message: "Must be logged in to vote" };
     }
 
-    // Check if user has already voted
-    const { data: existingVote, error: voteCheckError } = await supabase
-      .from("salary_votes")
-      .select("vote_type")
-      .eq("salary_id", salaryId)
-      .eq("user_id", user.id)
-      .maybeSingle();
-
-    if (voteCheckError && voteCheckError.code !== "PGRST116") {
-      // PGRST116 is "not found" which is fine, but other errors are not
-      console.error("Error checking existing vote:", voteCheckError);
-      return { success: false, message: "Error checking existing vote" };
+    const token = await getAccessToken();
+    if (!token) {
+      return { success: false, message: "Authentication error" };
     }
 
-    // If user has already voted, prevent voting again
-    if (existingVote) {
-      return { 
-        success: false, 
-        message: "You have already voted on this salary entry" 
+    // First, get the current vote status
+    const getResponse = await fetch(`/api/salaries/${salaryId}/vote`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!getResponse.ok) {
+      const errorData = await getResponse.json().catch(() => ({}));
+      return {
+        success: false,
+        message: errorData.error || "Error fetching vote status",
       };
     }
 
-    // Get the salary record to verify it exists
-    const { data: salary, error: salaryError } = await supabase
-      .from("salaries")
-      .select("id")
-      .eq("id", salaryId)
-      .single();
+    const { userVote: existingVote } = await getResponse.json();
 
-    if (salaryError || !salary) {
-      console.error("Salary not found:", salaryError);
-      return { success: false, message: "Salary not found" };
-    }
+    let response: Response;
 
-    // Insert the vote into salary_votes table
-    // The database trigger will automatically update upvotes/downvotes in salaries table
-    const { error: insertError } = await supabase
-      .from("salary_votes")
-      .insert({
-        salary_id: salaryId,
-        user_id: user.id,
-        vote_type: voteType,
+    // Determine which HTTP method to use
+    if (!existingVote) {
+      // No existing vote - create new vote (POST)
+      response = await fetch(`/api/salaries/${salaryId}/vote`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ voteType }),
       });
-
-    if (insertError) {
-      // Check if it's a unique constraint violation (user already voted)
-      if (insertError.code === "23505") {
-        return { 
-          success: false, 
-          message: "You have already voted on this salary entry" 
-        };
-      }
-      console.error("Error inserting vote:", insertError);
-      return { success: false, message: "Error submitting vote" };
+    } else if (existingVote === voteType) {
+      // Same vote type - remove vote (DELETE)
+      response = await fetch(`/api/salaries/${salaryId}/vote`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+    } else {
+      // Different vote type - update vote (PUT)
+      response = await fetch(`/api/salaries/${salaryId}/vote`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ voteType }),
+      });
     }
 
-    return { success: true };
+    const data = await response.json();
+
+    if (!response.ok) {
+      return {
+        success: false,
+        message: data.error || "Error processing vote",
+      };
+    }
+
+    return {
+      success: true,
+      userVote: data.userVote,
+      upvotes: data.upvotes,
+      downvotes: data.downvotes,
+    };
   } catch (error) {
     console.error("Error voting on salary:", error);
     return { success: false, message: "An unexpected error occurred" };
@@ -82,7 +111,7 @@ export const voteOnSalary = async (
 };
 
 /**
- * Get user's current vote on a salary entry
+ * Get user's current vote on a salary entry and current vote counts
  */
 export const getUserVote = async (
   salaryId: string
@@ -96,18 +125,25 @@ export const getUserVote = async (
       return null;
     }
 
-    const { data, error } = await supabase
-      .from("salary_votes")
-      .select("vote_type")
-      .eq("salary_id", salaryId)
-      .eq("user_id", user.id)
-      .maybeSingle();
-
-    if (error || !data) {
+    const token = await getAccessToken();
+    if (!token) {
       return null;
     }
 
-    return data.vote_type as "up" | "down";
+    const response = await fetch(`/api/salaries/${salaryId}/vote`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      console.error("Error fetching user vote:", response.statusText);
+      return null;
+    }
+
+    const data = await response.json();
+    return data.userVote || null;
   } catch (error) {
     console.error("Error getting user vote:", error);
     return null;

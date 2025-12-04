@@ -49,7 +49,7 @@ export default function SalaryDetailsPanel({
   onRefresh,
 }: SalaryDetailsPanelProps) {
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, openAuthModal } = useAuth();
   const [votes, setVotes] = useState({
     upvotes: data?.upvotes || 0,
     downvotes: data?.downvotes || 0,
@@ -160,7 +160,7 @@ export default function SalaryDetailsPanel({
 
   const handleVote = async (voteType: "up" | "down") => {
     if (!user) {
-      alert("Please log in to vote");
+      openAuthModal();
       return;
     }
 
@@ -173,38 +173,30 @@ export default function SalaryDetailsPanel({
       return;
     }
 
-    // Prevent voting if user has already voted
-    if (userVote) {
-      alert("You have already voted on this salary entry");
-      return;
-    }
-
     try {
       setIsVoting(true);
       const result = await voteOnSalary(salaryId, voteType);
 
       if (result.success) {
-        // Update local state immediately to reflect the vote
-        setVotes((prev) => {
-          if (voteType === "up") {
-            return { ...prev, upvotes: (prev.upvotes || 0) + 1 };
-          } else {
-            return { ...prev, downvotes: (prev.downvotes || 0) + 1 };
-          }
-        });
+        // Use the vote counts returned from the API (already updated by database trigger)
+        if (result.upvotes !== undefined && result.downvotes !== undefined) {
+          setVotes({
+            upvotes: result.upvotes,
+            downvotes: result.downvotes,
+          });
+        }
 
-        // Mark that user has voted and reload from database to confirm
-        setUserVote(voteType);
+        // Update user vote state from API response
+        if (result.userVote !== undefined) {
+          setUserVote(result.userVote);
+        }
         
-        // Wait a bit longer for the database trigger to update the counts
-        // Then refresh parent component data to sync with database
+        // Refresh parent component data to sync with database
+        // Wait longer to ensure database trigger completes (API waits 500ms, we wait 700ms more)
         if (onRefresh) {
-          setTimeout(async () => {
-            // Reload user vote to confirm
-            await loadUserVote();
-            // Refresh parent data
+          setTimeout(() => {
             onRefresh();
-          }, 1000); // Increased delay to ensure database trigger completes
+          }, 700);
         }
       } else {
         // Show error message if voting failed
@@ -422,29 +414,10 @@ export default function SalaryDetailsPanel({
               {(() => {
                 const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
                 const isValidUuid = data?.id ? uuidRegex.test(data.id) : false;
-                const isDisabled = isVoting || !user || !data?.id || !!userVote || !isValidUuid;
-                
-                // Debug logging
-                if (data?.id) {
-                  console.log("VoteButtons disabled check:", {
-                    isVoting,
-                    hasUser: !!user,
-                    userId: user?.id,
-                    hasDataId: !!data?.id,
-                    dataId: data?.id,
-                    hasUserVote: !!userVote,
-                    userVote,
-                    isValidUuid,
-                    isDisabled,
-                    reasons: {
-                      isVoting,
-                      noUser: !user,
-                      noDataId: !data?.id,
-                      hasVoted: !!userVote,
-                      invalidUuid: !isValidUuid,
-                    }
-                  });
-                }
+                // Only disable if: voting in progress, no data ID, or invalid UUID
+                // Allow clicking when not logged in (will open auth modal)
+                // Don't disable based on userVote - allow vote changes
+                const isDisabled = isVoting || !data?.id || !isValidUuid;
                 
                 return (
                   <div className="flex items-center gap-2">
@@ -455,19 +428,9 @@ export default function SalaryDetailsPanel({
                       onVote={(voteType) => handleVote(voteType)}
                       isDisabled={isDisabled}
                     />
-                    {!user && (
-                      <span className="text-xs text-gray-500 italic">
-                        (Login to vote)
-                      </span>
-                    )}
                     {user && !isValidUuid && data?.id && (
                       <span className="text-xs text-gray-500 italic">
                         (Voting only for verified entries)
-                      </span>
-                    )}
-                    {user && isValidUuid && !!userVote && (
-                      <span className="text-xs text-gray-500 italic">
-                        (Already voted)
                       </span>
                     )}
                   </div>

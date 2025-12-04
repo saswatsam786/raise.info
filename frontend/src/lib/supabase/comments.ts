@@ -232,6 +232,10 @@ export const getComments = async (
     case "oldest":
       query = query.order("created_at", { ascending: true });
       break;
+    case "all":
+      // Show all comments, sorted by newest first
+      query = query.order("created_at", { ascending: false });
+      break;
     default: // 'best'
       query = query.order("created_at", { ascending: false });
   }

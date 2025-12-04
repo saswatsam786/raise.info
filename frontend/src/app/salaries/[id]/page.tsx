@@ -111,7 +111,7 @@ export default function SalaryDetailsPage() {
           yoe: data.years_of_experience || 0,
           avg_salary: data.avg_salary || 0,
           data_points_count: data.data_points_count,
-          reports: data.data_points_count ?? 1,
+          reports: (data.data_points_count ?? 1) + ((data.upvotes || 0) - (data.downvotes || 0)),
           base_salary: data.base_salary,
           bonus: data.bonus,
           stock_compensation: data.stock_compensation,

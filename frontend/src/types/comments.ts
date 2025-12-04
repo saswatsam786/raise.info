@@ -45,7 +45,7 @@ export interface Reply {
   };
 }
 
-export type SortOption = "best" | "newest" | "oldest";
+export type SortOption = "all" | "best" | "newest" | "oldest";
 
 export interface CommentWithReplies extends Comment {
   replies: Reply[];

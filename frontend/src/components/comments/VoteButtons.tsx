@@ -26,7 +26,7 @@ export default function VoteButtons({
         onClick={() => onVote("up")}
         disabled={isDisabled}
         className={`p-1 rounded hover:bg-slate-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
-          userVote === "up" ? "text-orange-600" : "text-slate-500"
+          userVote === "up" ? "text-green-600" : "text-slate-500"
         }`}
         aria-label="Upvote"
       >
@@ -39,7 +39,7 @@ export default function VoteButtons({
         onClick={() => onVote("down")}
         disabled={isDisabled}
         className={`p-1 rounded hover:bg-slate-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
-          userVote === "down" ? "text-blue-600" : "text-slate-500"
+          userVote === "down" ? "text-red-600" : "text-slate-500"
         }`}
         aria-label="Downvote"
       >

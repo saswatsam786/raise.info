@@ -28,7 +28,7 @@ export default function CommentSection({
   const { user } = useAuth();
   const [comments, setComments] = useState<CommentWithReplies[]>([]);
   const [loading, setLoading] = useState(true);
-  const [sortBy, setSortBy] = useState<SortOption>("best");
+  const [sortBy, setSortBy] = useState<SortOption>("all");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(3);
   const [commentCount, setCommentCount] = useState(initialCommentCount);
@@ -161,7 +161,8 @@ export default function CommentSection({
             onChange={(e) => setSortBy(e.target.value as SortOption)}
             className="text-sm text-slate-600 bg-white border border-slate-300 rounded-lg px-3 py-1.5 pr-8 appearance-none cursor-pointer hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:border-transparent"
           >
-            <option value="best">Sort by: Best</option>
+            <option value="all">Sort by: All</option>
+            <option value="best">Sort by: Most votes</option>
             <option value="newest">Sort by: Newest</option>
             <option value="oldest">Sort by: Oldest</option>
           </select>

@@ -864,7 +864,7 @@ export default function PayScope() {
               isOpen={isSidePanelOpen}
               onClose={handleCloseSidePanel}
               data={selectedSalaryData}
-              onRefresh={() => setRefreshTrigger((prev) => prev + 1)}
+              onRefresh={refreshSalaryData}
             />
           )}
         </div>
