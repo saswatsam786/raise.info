@@ -36,6 +36,37 @@ export default function CommentInput({
   const handleFileUpload = async (file: File, type: "file" | "image") => {
     if (!user) return;
 
+    // Client-side validation before upload
+    if (type === "image") {
+      const allowedImageTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+      if (!allowedImageTypes.includes(file.type)) {
+        setUploadError('Invalid image type. Allowed types: JPEG, PNG, GIF, WebP.');
+        return;
+      }
+      if (file.size > 5 * 1024 * 1024) {
+        setUploadError('Image size must be less than 5MB.');
+        return;
+      }
+    } else {
+      const allowedFileTypes = [
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'application/vnd.ms-excel',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        'text/plain',
+        'text/csv',
+      ];
+      if (!allowedFileTypes.includes(file.type)) {
+        setUploadError('Invalid file type. Allowed types: PDF, Word, Excel, Text, CSV.');
+        return;
+      }
+      if (file.size > 10 * 1024 * 1024) {
+        setUploadError('File size must be less than 10MB.');
+        return;
+      }
+    }
+
     try {
       setIsUploading(true);
       setUploadError(null);
