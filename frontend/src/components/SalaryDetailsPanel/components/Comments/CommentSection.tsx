@@ -87,8 +87,13 @@ export default function CommentSection({
     content: string,
     attachments?: Attachment[]
   ) => {
+    // Require authentication before adding comment
+    if (!user) {
+      throw new Error("You must be signed in to post comments");
+    }
+
     try {
-      const userId = user?.id || null;
+      const userId = user.id;
       const displayName =
         user?.user_metadata?.full_name ||
         user?.user_metadata?.name ||

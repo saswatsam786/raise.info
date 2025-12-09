@@ -20,10 +20,29 @@ interface SidebarLayoutProps {
 
 export default function SidebarLayout({ children, salaryData }: SidebarLayoutProps) {
   return (
-    <Container maxWidth={false} className="px-4 py-8">
-      <Box className="flex gap-6">
-        {/* Left Sidebar - Hidden on mobile and tablet, visible on desktop */}
-        <Box className="hidden lg:block lg:w-64 xl:w-72 flex-shrink-0">
+    <Container maxWidth={false} className="px-2 sm:px-4 py-4 sm:py-8">
+      {/* Mobile & Tablet: Stack vertically */}
+      <div className="flex flex-col lg:hidden gap-4">
+        {/* Main Content */}
+        <Box className="w-full">
+          {children}
+        </Box>
+
+        {/* Left Sidebar - Below main content on mobile/tablet */}
+        <Box className="w-full">
+          <LeftSidebar salaryData={salaryData} />
+        </Box>
+
+        {/* Right Sidebar - Below left sidebar on mobile/tablet */}
+        <Box className="w-full">
+          <RightSidebar salaryData={salaryData} />
+        </Box>
+      </div>
+
+      {/* Desktop: Side by side layout */}
+      <Box className="hidden lg:flex gap-6">
+        {/* Left Sidebar */}
+        <Box className="lg:w-64 xl:w-72 flex-shrink-0">
           <div className="sticky top-8">
             <LeftSidebar salaryData={salaryData} />
           </div>
@@ -34,8 +53,8 @@ export default function SidebarLayout({ children, salaryData }: SidebarLayoutPro
           {children}
         </Box>
 
-        {/* Right Sidebar - Hidden on mobile, visible on tablet and desktop */}
-        <Box className="hidden md:block md:w-64 lg:w-64 xl:w-72 flex-shrink-0">
+        {/* Right Sidebar */}
+        <Box className="lg:w-64 xl:w-72 flex-shrink-0">
           <div className="sticky top-8">
             <RightSidebar salaryData={salaryData} />
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useRef } from "react";
+import { useRouter } from "next/navigation";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import { supabase } from "@/lib/supabase/config";
@@ -37,8 +38,10 @@ type SortField = keyof SalaryData;
 type SortDirection = "asc" | "desc";
 
 export default function PayScope() {
+  const router = useRouter();
   const [salaries, setSalaries] = useState<SalaryData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isLargeScreen, setIsLargeScreen] = useState(true);
 
   // Fetch salary data from Supabase
   useEffect(() => {
@@ -138,21 +141,45 @@ export default function PayScope() {
   const [filteredCompanies, setFilteredCompanies] = useState<string[]>([]);
   const autocompleteRef = useRef<HTMLDivElement>(null);
 
-  // Side panel state - open by default for first row
-  const [isSidePanelOpen, setIsSidePanelOpen] = useState(true);
+  // Detect screen size for responsive behavior
+  useEffect(() => {
+    const checkScreenSize = () => {
+      // lg breakpoint is 1024px in Tailwind
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    // Check on mount
+    checkScreenSize();
+
+    // Listen for resize events
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  // Side panel state - will be set based on screen size
+  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
   const [selectedSalaryData, setSelectedSalaryData] =
     useState<SalaryData | null>(null);
   const [selectedRowIndex, setSelectedRowIndex] = useState<number>(0); // Track selected row index
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [isAddSalaryModalOpen, setIsAddSalaryModalOpen] = useState(false);
 
-  // Handle row click to open side panel and update URL
+  // Update side panel state when screen size changes
+  useEffect(() => {
+    if (!isLargeScreen) {
+      // Close side panel on smaller screens
+      setIsSidePanelOpen(false);
+    } else if (selectedSalaryData && isLargeScreen) {
+      // Reopen panel on large screens if we have selected data
+      setIsSidePanelOpen(true);
+    }
+  }, [isLargeScreen, selectedSalaryData]);
+
+  // Handle row click - navigate on small screens, open panel on large screens
   const handleRowClick = (item: SalaryData, index: number) => {
     setSelectedSalaryData(item);
     setSelectedRowIndex(index);
-    setIsSidePanelOpen(true);
     
-    // Update URL to SEO-friendly format (without navigation to keep panel open)
     if (item.id) {
       const url = generateSalaryUrl({
         company_name: item.company_name,
@@ -160,8 +187,15 @@ export default function PayScope() {
         location: item.location,
         id: item.id,
       });
-      // Update URL without navigation (keeps panel open)
-      window.history.pushState({}, "", url);
+
+      if (isLargeScreen) {
+        // Large screen: Open side panel and update URL without navigation
+        setIsSidePanelOpen(true);
+        window.history.pushState({}, "", url);
+      } else {
+        // Small screen: Navigate to expanded page
+        router.push(url);
+      }
     }
   };
 
@@ -329,13 +363,13 @@ export default function PayScope() {
     return filtered;
   }, [salaries, filters, sortField, sortDirection]);
 
-  // Set first row as selected by default when component mounts
+  // Set first row as selected by default when component mounts (only on large screens)
   useEffect(() => {
-    if (filteredAndSortedData.length > 0 && !selectedSalaryData) {
+    if (filteredAndSortedData.length > 0 && !selectedSalaryData && isLargeScreen) {
       setSelectedSalaryData(filteredAndSortedData[0]);
       setSelectedRowIndex(0);
     }
-  }, [filteredAndSortedData, selectedSalaryData]);
+  }, [filteredAndSortedData, selectedSalaryData, isLargeScreen]);
 
   // Pagination
   const totalPages = Math.ceil(filteredAndSortedData.length / itemsPerPage);
@@ -725,10 +759,10 @@ export default function PayScope() {
             isSidePanelOpen ? "" : ""
           }`}
         >
-          {/* Table Section - 70% when panel is open, 100% when closed */}
+          {/* Table Section - 70% when panel is open on large screens, 100% when closed or on small screens */}
           <div
             className={`transition-all duration-500 ease-in-out flex flex-col ${
-              isSidePanelOpen ? "w-[70%]" : "w-full"
+              isSidePanelOpen && isLargeScreen ? "w-[70%] lg:w-[70%]" : "w-full"
             }`}
           >
             {isLoading ? (
@@ -871,8 +905,8 @@ export default function PayScope() {
             )}
           </div>
 
-          {/* Side Panel Section - 40% when open */}
-          {isSidePanelOpen && (
+          {/* Side Panel Section - Only visible on large screens (lg and above) */}
+          {isSidePanelOpen && isLargeScreen && (
             <SalaryDetailsPanel
               isOpen={isSidePanelOpen}
               onClose={handleCloseSidePanel}

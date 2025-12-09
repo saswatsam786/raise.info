@@ -51,7 +51,7 @@ CREATE POLICY "Anyone can read comments" ON comments
   FOR SELECT USING (true);
 
 CREATE POLICY "Authenticated users can insert comments" ON comments
-  FOR INSERT WITH CHECK (true);
+  FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
 
 CREATE POLICY "Users can update their own comments" ON comments
   FOR UPDATE USING (auth.uid() = user_id);
@@ -64,7 +64,7 @@ CREATE POLICY "Anyone can read replies" ON replies
   FOR SELECT USING (true);
 
 CREATE POLICY "Authenticated users can insert replies" ON replies
-  FOR INSERT WITH CHECK (true);
+  FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
 
 CREATE POLICY "Users can update their own replies" ON replies
   FOR UPDATE USING (auth.uid() = user_id);

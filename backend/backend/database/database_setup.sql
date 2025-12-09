@@ -201,7 +201,7 @@ CREATE POLICY "Anyone can read comments" ON comments
 
 DROP POLICY IF EXISTS "Authenticated users can insert comments" ON comments;
 CREATE POLICY "Authenticated users can insert comments" ON comments
-  FOR INSERT WITH CHECK (true);
+  FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
 
 DROP POLICY IF EXISTS "Users can update their own comments" ON comments;
 CREATE POLICY "Users can update their own comments" ON comments
@@ -226,7 +226,7 @@ CREATE POLICY "Anyone can read replies" ON replies
 
 DROP POLICY IF EXISTS "Authenticated users can insert replies" ON replies;
 CREATE POLICY "Authenticated users can insert replies" ON replies
-  FOR INSERT WITH CHECK (true);
+  FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
 
 DROP POLICY IF EXISTS "Users can update their own replies" ON replies;
 CREATE POLICY "Users can update their own replies" ON replies

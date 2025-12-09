@@ -92,6 +92,12 @@ export default function CommentInput({
   const handleSubmit = async () => {
     if ((!content.trim() && attachments.length === 0) || isSubmitting) return;
 
+    // Require authentication before submitting
+    if (!user) {
+      openAuthModal();
+      return;
+    }
+
     try {
       setIsSubmitting(true);
       setUploadError(null);
@@ -143,21 +149,49 @@ export default function CommentInput({
         className="hidden"
       />
 
-      <textarea
-        value={content}
-        onChange={(e) => setContent(e.target.value.slice(0, MAX_CHARS))}
-        placeholder={placeholder}
-        autoFocus={autoFocus}
-        disabled={isSubmitting || isUploading}
-        className="w-full p-4 text-sm text-slate-700 placeholder-slate-400 resize-none focus:outline-none rounded-t-lg disabled:opacity-50"
-        rows={3}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
-            handleSubmit();
-          }
-        }}
-        maxLength={MAX_CHARS}
-      />
+      <div className="relative">
+        <textarea
+          value={content}
+          onChange={(e) => {
+            if (user) {
+              setContent(e.target.value.slice(0, MAX_CHARS));
+            }
+          }}
+          placeholder={user ? placeholder : "Sign in to post a comment..."}
+          autoFocus={autoFocus}
+          disabled={isSubmitting || isUploading}
+          readOnly={!user}
+          className="w-full p-4 text-sm text-slate-700 placeholder-slate-400 resize-none focus:outline-none rounded-t-lg disabled:opacity-50"
+          rows={3}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+              handleSubmit();
+            }
+          }}
+          maxLength={MAX_CHARS}
+          onClick={() => {
+            if (!user) {
+              openAuthModal();
+            }
+          }}
+          onFocus={(e) => {
+            if (!user) {
+              e.target.blur();
+              openAuthModal();
+            }
+          }}
+        />
+        {!user && (
+          <div
+            className="absolute inset-0 cursor-pointer z-10"
+            onClick={() => openAuthModal()}
+            onMouseDown={(e) => {
+              e.preventDefault();
+              openAuthModal();
+            }}
+          />
+        )}
+      </div>
 
       {/* Upload Progress */}
       {isUploading && (
@@ -266,8 +300,9 @@ export default function CommentInput({
           )}
           <button
             onClick={handleSubmit}
-            disabled={(!content.trim() && attachments.length === 0) || isSubmitting || isUploading}
+            disabled={(!content.trim() && attachments.length === 0) || isSubmitting || isUploading || !user}
             className="px-4 py-2 bg-slate-600 text-white text-sm font-medium rounded-lg hover:bg-slate-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            title={!user ? "Sign in to post comments" : undefined}
           >
             {isSubmitting ? "Posting..." : buttonText}
           </button>
